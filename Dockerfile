@@ -1,34 +1,25 @@
-# Start with a slightly newer, yet stable, Python version
-FROM python:3.11 
+# Example Dockerfile structure for environment fix
+FROM python:3.10-slim
 
-# --- HF Recommended Security/User Setup ---
-# Create a dedicated, non-root user (best security practice)
-RUN useradd -m -u 1000 user
-USER user
-ENV PATH="/home/user/.local/bin:$PATH"
+# Install system dependencies (CRITICAL for packages like lxml, chroma-hnswlib, etc.)
+RUN apt-get update && apt-get install -y \
+    libxml2-dev \
+    libxslt-dev \
+    ... \
+    && rm -rf /var/lib/apt/lists/*
 
 # Set working directory
 WORKDIR /app
 
-# --- Dependency Installation (The Fix) ---
-# Install system dependencies (needed for lxml and other C-packages)
-# Add this section back, which was missing in both your initial attempt and the HF template!
-RUN apt-get update && \
-    apt-get install -y build-essential libxml2-dev libxslt-dev && \
-    rm -rf /var/lib/apt/lists/*
+# Copy requirements and install Python packages
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy the requirements file and install Python dependencies
-COPY --chown=user ./requirements.txt requirements.txt
-# Use --upgrade to help resolve those dependency conflicts you saw earlier
-RUN pip install --no-cache-dir --upgrade -r requirements.txt
+# Copy application code
+COPY . .
 
-# Copy the rest of your application code
-COPY --chown=user . /app
+# Expose the port
+EXPOSE 7860
 
-# --- Application Startup (The Entry Point) ---
-# NOTE: You MUST confirm the correct command for your app.
-# The default HF command is for Uvicorn (FastAPI/Starlette).
-# If your app uses Flask or Gradio, you need a different CMD.
-# CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "7860"]
-# Dockerfile CMD
+# Define the production startup command (CRITICAL for HF Space)
 CMD ["gunicorn", "--bind", "0.0.0.0:7860", "app:app"]
