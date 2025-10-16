@@ -1,0 +1,3 @@
+git clone https://github.com/ibm-developer-skills-network/wbphl-build_own_chatbot_without_open_ai.git
+ren wbphl-build_own_chatbot_without_open_ai build_chatbot_for_your_data
+cd build_chatbot_for_your_data
