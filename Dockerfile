@@ -32,4 +32,4 @@ COPY --chown=user . /app
 EXPOSE 7860
 
 # Define the production startup command using gunicorn (best for Flask)
-CMD ["gunicorn", "--bind", "0.0.0.0:7860", "app:app"]
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "7860"]
