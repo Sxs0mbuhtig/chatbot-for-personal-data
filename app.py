@@ -2,47 +2,34 @@ import logging
 import os
 from flask import Flask, render_template, request, jsonify
 from flask_cors import CORS
-import worker  # Import the worker module
+from worker import init_llm, process_document, process_prompt # Functions imported directly
 
 # Initialize Flask app and CORS
 app = Flask(__name__)
-cors = CORS(app, resources={r"/*": {"origins": "*"}})
-app.logger.setLevel(logging.ERROR)
-
-# Define the route for the index page
-@app.route('/', methods=['GET'])
-def index():
-    return render_template('index.html')  # Render the index.html template
+# ... other setup ...
 
 # Define the route for processing messages
 @app.route('/process-message', methods=['POST'])
 def process_message_route():
-    user_message = request.json['userMessage']  # Extract the user's message from the request
+    user_message = request.json['userMessage']
     print('user_message', user_message)
 
-    bot_response = worker.process_prompt(user_message)  # Process the user's message using the worker module
+    # FIX: Changed 'worker_ibm.process_prompt' to 'process_prompt'
+    bot_response = process_prompt(user_message)
 
-    # Return the bot's response as JSON
-    return jsonify({
-        "botResponse": bot_response
-    }), 200
+    # ... rest of the function ...
 
 # Define the route for processing documents
 @app.route('/process-document', methods=['POST'])
 def process_document_route():
-    # Check if a file was uploaded
-    if 'file' not in request.files:
-        return jsonify({
-            "botResponse": "It seems like the file was not uploaded correctly, can you try "
-                           "again. If the problem persists, try using a different file"
-        }), 400
+    # ... file checking and saving logic ...
 
-    file = request.files['file']  # Extract the uploaded file from the request
+    file = request.files['file']
+    file_path = file.filename
+    file.save(file_path)
 
-    file_path = file.filename  # Define the path where the file will be saved
-    file.save(file_path)  # Save the file
-
-    worker.process_document(file_path)  # Process the document using the worker module
+    # FIX: Changed 'worker_ibm.process_document' to 'process_document'
+    process_document(file_path)
 
     # Return a success message as JSON
     return jsonify({

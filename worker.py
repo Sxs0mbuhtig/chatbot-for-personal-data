@@ -44,21 +44,6 @@ def init_llm():
         model_kwargs={"device": DEVICE}
     )
     logger.debug("Embeddings initialized with model device: %s", DEVICE)
-    
-    # Initialize embeddings using a pre-trained model to represent the text data.
-    ### --> if you are using huggingFace API:
-    # Set up the environment variable for HuggingFace and initialize the desired model, and load the model into the HuggingFaceHub
-    # dont forget to remove llm_hub for watsonX
-
-    # os.environ["HUGGINGFACEHUB_API_TOKEN"] = "YOUR API KEY"
-    # model_id = "tiiuae/falcon-7b-instruct"
-    #llm_hub = HuggingFaceHub(repo_id=model_id, model_kwargs={"temperature": 0.1, "max_new_tokens": 600, "max_length": 600})
-    
-    embeddings = HuggingFaceInstructEmbeddings(
-        model_name="sentence-transformers/all-MiniLM-L6-v2", 
-        model_kwargs={"device": DEVICE}
-    )
-    logger.debug("Embeddings initialized with model device: %s", DEVICE)
 
 # Function to process a PDF document
 def process_document(document_path):
