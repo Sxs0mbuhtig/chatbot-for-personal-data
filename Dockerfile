@@ -29,4 +29,6 @@ COPY --chown=user . /app
 # NOTE: You MUST confirm the correct command for your app.
 # The default HF command is for Uvicorn (FastAPI/Starlette).
 # If your app uses Flask or Gradio, you need a different CMD.
-CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "7860"]
+# CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "7860"]
+# Dockerfile CMD
+CMD ["gunicorn", "--bind", "0.0.0.0:7860", "app:app"]

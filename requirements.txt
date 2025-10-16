@@ -16,3 +16,4 @@ sentence-transformers==2.2.2
 InstructorEmbedding==1.0.0
 p4python>=2023.1
 bs4==0.0.1
+gunicorn
