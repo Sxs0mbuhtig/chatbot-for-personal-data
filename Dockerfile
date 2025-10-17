@@ -4,13 +4,14 @@ FROM python:3.12-slim
 # Install system dependencies needed for lxml, pdf2image, and chroma-hnswlib
 # We also include 'gfortran' and 'build-essential' for packages that require compilation
 # RUN apt-get update && apt-get install -y \
-RUN apt-get update && apt-get install -y libxml2-dev libxslt-dev libjpeg-dev zlib1g-dev build-essential
+RUN apt-get update && \
+    apt-get install -y \
     libxml2-dev \
     libxslt-dev \
     libjpeg-dev \
     zlib1g-dev \
-    gfortran \
     build-essential \
+    gfortran \
     && rm -rf /var/lib/apt/lists/*
 
 # --- Hugging Face User Setup (CRITICAL) ---
