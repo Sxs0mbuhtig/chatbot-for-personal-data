@@ -1,5 +1,5 @@
 # Use a Python base image
-FROM python:3.10-slim
+FROM python:3.12-slim
 
 # Install system dependencies needed for lxml, pdf2image, and chroma-hnswlib
 # We also include 'gfortran' and 'build-essential' for packages that require compilation
@@ -23,7 +23,8 @@ WORKDIR /app
 
 # Copy requirements and install Python packages, ensuring the user owns them
 COPY --chown=user requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+# Line 26 in Dockerfile: RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir --default-timeout=300 -r requirements.txt
 
 # Copy application code, ensuring the user owns it
 COPY --chown=user . /app
