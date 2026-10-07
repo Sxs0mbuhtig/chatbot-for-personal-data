@@ -1,0 +1,32 @@
+{
+  "name": "omnisense_lexicon",
+  "fields": [
+    {"name": "headword", "type": "string", "infix": true},
+    {"name": "norm_headword", "type": "string", "infix": true},
+    {"name": "canonical_headword", "type": "string", "optional": true, "infix": true},
+    {"name": "pos", "type": "string", "facet": true, "optional": true},
+    {"name": "definition", "type": "string"},
+    
+    {"name": "phonetic_ipa", "type": "string", "optional": true},
+    {"name": "phonetic_km", "type": "string", "optional": true},
+    
+    {"name": "variants", "type": "string[]", "optional": true, "infix": true},
+    {"name": "is_variant", "type": "bool", "optional": true, "facet": true},
+    {"name": "is_official_chuon_nath", "type": "bool", "optional": true, "facet": true},
+    {"name": "chuon_nath_guidance", "type": "string", "optional": true},
+    {"name": "orthographic_warning", "type": "string", "optional": true},
+    {"name": "related_words", "type": "string[]", "optional": true},
+    {"name": "roots", "type": "string[]", "optional": true},
+    
+    {"name": "source_title", "type": "string", "facet": true},
+    {"name": "volume", "type": "int32", "facet": true, "optional": true},
+    {"name": "book_part", "type": "int32", "facet": true, "optional": true},
+    {"name": "page_number", "type": "int32", "optional": true},
+    {"name": "entry_index_on_page", "type": "int32", "optional": true},
+    {"name": "sort_index", "type": "int32"},
+    
+    {"name": "is_verified_against_facsimile", "type": "bool", "optional": true, "facet": true},
+    {"name": "editorial_notes", "type": "string", "optional": true}
+  ],
+  "default_sorting_field": "sort_index"
+}

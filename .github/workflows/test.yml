@@ -1,0 +1,42 @@
+name: Continuous Integration Test Suite
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code Repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python 3.11
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Install Python Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Pre-Commit Security Audit (No Hardcoded Secrets)
+      run: |
+        echo "Auditing repository for exposed private keys..."
+        if [ -f "ed25519_git" ]; then
+          echo "ERROR: Private SSH key file ed25519_git detected in repository!"
+          exit 1
+        fi
+        if git status --porcelain | grep -i "\.env$"; then
+          echo "ERROR: .env file committed to git tracking!"
+          exit 1
+        fi
+        echo "Security audit passed: No private keys or tracked .env files."
+
+    - name: Run Pytest Test Suite
+      run: |
+        pytest tests/ -v

@@ -1,0 +1,14 @@
+.env
+*.env
+*.key
+ed25519*
+data/staged_definitions.json
+__pycache__/
+*.pyc
+.pytest_cache/
+*.db
+typesense-data/
+unmatched_queries.jsonl
+batch_execution.log
+.backups/
+ANTIGRAVITY_ROUND2_DISTRIBUTED_OUTPUT.md

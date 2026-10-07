@@ -1,0 +1,186 @@
+{
+  "កអសA": {
+    "count": 1,
+    "status": "exact_match",
+    "last_searched": "2026-09-14T10:29:41.753866",
+    "ips": [
+      "127.0.0.1"
+    ]
+  },
+  "ចេះដឹង": {
+    "count": 1,
+    "status": "exact_match",
+    "last_searched": "2026-09-14T10:31:47.811621",
+    "ips": [
+      "127.0.0.1"
+    ]
+  },
+  "ែគលែដឹង": {
+    "count": 1,
+    "status": "unmatched_queued",
+    "last_searched": "2026-09-14T10:34:29.211617",
+    "ips": [
+      "127.0.0.1"
+    ]
+  },
+  "បែដួង": {
+    "count": 1,
+    "status": "unmatched_queued",
+    "last_searched": "2026-09-14T10:34:29.238769",
+    "ips": [
+      "127.0.0.1"
+    ]
+  },
+  "ងក់ងល": {
+    "count": 1,
+    "status": "unmatched_queued",
+    "last_searched": "2026-09-14T10:39:13.565795+00:00",
+    "ips": [
+      "127.0.0.1"
+    ]
+  },
+  "ងក់ងល់": {
+    "count": 1,
+    "status": "unmatched_queued",
+    "last_searched": "2026-09-14T10:39:18.282889+00:00",
+    "ips": [
+      "127.0.0.1"
+    ]
+  },
+  "ចែសដឹង": {
+    "count": 2,
+    "status": "unmatched_queued",
+    "last_searched": "2026-09-14T10:54:24.157685+00:00",
+    "ips": [
+      "127.0.0.1"
+    ]
+  },
+  "ចែស": {
+    "count": 3,
+    "status": "exact_match",
+    "last_searched": "2026-09-14T10:56:58.236672+00:00",
+    "ips": [
+      "127.0.0.1"
+    ]
+  },
+  "ចែសៗ": {
+    "count": 1,
+    "status": "unmatched_queued",
+    "last_searched": "2026-09-14T10:56:20.201539+00:00",
+    "ips": [
+      "127.0.0.1"
+    ]
+  },
+  "តក់": {
+    "count": 1,
+    "status": "exact_match",
+    "last_searched": "2026-09-14T11:06:30.604156+00:00",
+    "ips": [
+      "127.0.0.1"
+    ]
+  },
+  "តក់ៗ": {
+    "count": 1,
+    "status": "exact_match",
+    "last_searched": "2026-09-14T11:06:35.042398+00:00",
+    "ips": [
+      "127.0.0.1"
+    ]
+  },
+  "ង៉ុក": {
+    "count": 1,
+    "status": "unmatched_queued",
+    "last_searched": "2026-09-14T11:06:51.295889+00:00",
+    "ips": [
+      "127.0.0.1"
+    ]
+  },
+  "ង៉ុកៗ": {
+    "count": 1,
+    "status": "unmatched_queued",
+    "last_searched": "2026-09-14T11:07:15.712177+00:00",
+    "ips": [
+      "127.0.0.1"
+    ]
+  },
+  "ងើ": {
+    "count": 1,
+    "status": "exact_match",
+    "last_searched": "2026-09-14T11:07:50.802762+00:00",
+    "ips": [
+      "127.0.0.1"
+    ]
+  },
+  "ងើរ": {
+    "count": 1,
+    "status": "unmatched_queued",
+    "last_searched": "2026-09-14T11:07:54.098091+00:00",
+    "ips": [
+      "127.0.0.1"
+    ]
+  },
+  "ងើៗ": {
+    "count": 1,
+    "status": "unmatched_queued",
+    "last_searched": "2026-09-14T11:07:59.168808+00:00",
+    "ips": [
+      "127.0.0.1"
+    ]
+  },
+  "ស៊ីញ៉េ": {
+    "count": 7,
+    "status": "loanword_match",
+    "last_searched": "2026-09-15T04:51:08.984496+00:00",
+    "ips": [
+      "846488f1dc5c07b4"
+    ]
+  },
+  "ហ្វ្លូ": {
+    "count": 3,
+    "status": "loanword_match",
+    "last_searched": "2026-09-15T01:54:39.323561+00:00",
+    "ips": [
+      "846488f1dc5c07b4"
+    ]
+  },
+  "តេងតាងៗ": {
+    "count": 3,
+    "status": "unmatched_queued",
+    "last_searched": "2026-09-15T01:54:39.351354+00:00",
+    "ips": [
+      "846488f1dc5c07b4"
+    ]
+  },
+  "ពាក្យមិនស្គាល់៩៩": {
+    "count": 2,
+    "status": "unmatched_queued",
+    "last_searched": "2026-09-15T01:54:55.272783+00:00",
+    "ips": [
+      "846488f1dc5c07b4"
+    ]
+  },
+  "លឺ": {
+    "count": 2,
+    "status": "unmatched_queued",
+    "last_searched": "2026-09-15T04:51:13.415992+00:00",
+    "ips": [
+      "846488f1dc5c07b4"
+    ]
+  },
+  "តម្រូវ": {
+    "count": 1,
+    "status": "unmatched_queued",
+    "last_searched": "2026-09-15T05:58:29.690045+00:00",
+    "ips": [
+      "12ca17b49af22894"
+    ]
+  },
+  "កេង": {
+    "count": 1,
+    "status": "unmatched_queued",
+    "last_searched": "2026-09-15T05:58:47.037396+00:00",
+    "ips": [
+      "12ca17b49af22894"
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+[
+  {
+    "id": "kw_computer_variant",
+    "headword": "កុមព្យូទ័រ",
+    "norm_headword": "កុមព្យូទ័រ",
+    "pos": "ន.",
+    "definition": "ទម្រង់សរសេរពេញនិយមតាមសំឡេង ប៉ុន្តែមិនផ្លូវការ។ មើល៖ កុំព្យូទ័រ",
+    "is_variant": true,
+    "canonical_headword": "កុំព្យូទ័រ",
+    "etymology_note": "Adopted from English 'computer'. While 'កុម-' is often typed to avoid confusion with the imperative negative 'កុំ' (don't), official NCKL standardization uses 'កុំព្យូទ័រ' to accurately preserve the nasal /m/ sound of 'com-'.",
+    "source_title": "Modern Tech Terminology / NCKL Alignment",
+    "sort_index": 10001
+  },
+  {
+      "id": "kw_chamnong_variant",
+      "headword": "ចំនង់",
+      "norm_headword": "ចំនង់",
+      "pos": "ន.",
+      "definition": "ទម្រង់សរសេរតាមសំឡេងនិយាយ ឬអក្ខរាវិរុទ្ធមិនផ្លូវការ។ មើល៖ ចំណង់",
+      "is_variant": true,
+      "canonical_headword": "ចំណង់",
+      "orthographic_directive": "សម្ដេចព្រះសង្ឃរាជ ជួន ណាត ណែនាំឱ្យប្រើអក្សរ «ណ» ជា «ចំណង់» (បំណង, ការចង់បាន) ដែលក្លាយមកពីឫស «ចង់» ដោយជែកល្បះ «ណ» (Infix -am-)។",
+      "etymology_note": "ពាក្យ «ចំណង់» ក្លាយចេញពី «ចង់» + ជែក «-ណ-» (-am- n- nasalization)។ ការសរសេរ «ចំនង់» (ប្រើ ន) គឺជាការច្រឡំអក្ខរាវិរុទ្ធ។",
+      "source_title": "Chuon Nath Dictionary Directives",
+      "sort_index": 11500
+    },
+  {
+    "id": "kw_damrong_variant",
+    "headword": "ដំរង់",
+    "norm_headword": "ដំរង់",
+    "pos": "កិ.",
+    "definition": "ទម្រង់សរសេរចាស់ ឬអក្ខរាវិរុទ្ធមិនផ្លូវការ។ មើល៖ តម្រង់",
+    "is_variant": true,
+    "canonical_headword": "តម្រង់",
+    "orthographic_directive": "សម្តេចព្រះសង្ឃរាជ ជួន ណាត ណែនាំឱ្យប្រើ «តម្រង់» (កិរិយាសព្ទ) ឬ «តម្រង់ទិស»។",
+    "etymology_note": "ពាក្យ «តម្រង់» ក្លាយចេញពីឫស «ត្រង់» ដោយជែកអក្សរ «ម» (Infix -am-)។ ការសរសេរ «ដំរង់» ជាទម្រង់សរសេរតាមសំឡេងនិយាយ ដែលមិនស្របតាមវិធានអក្ខរាវិរុទ្ធស្តង់ដារ។",
+    "source_title": "Chuon Nath Dictionary / Orthographic Directives",
+    "sort_index": 12040
+  }
+]

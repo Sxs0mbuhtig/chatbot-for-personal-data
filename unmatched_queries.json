@@ -1,0 +1,194 @@
+{
+  "ែគលែដឹង": {
+    "query": "ែគលែដឹង",
+    "count": 1,
+    "first_logged": "2026-09-14T10:34:29.212165",
+    "last_logged": "2026-09-14T10:34:29.212183",
+    "status": "pending_ai_review"
+  },
+  "បែដួង": {
+    "query": "បែដួង",
+    "count": 1,
+    "first_logged": "2026-09-14T10:34:29.239355",
+    "last_logged": "2026-09-14T10:34:29.239373",
+    "status": "pending_ai_review"
+  },
+  "ចេះដឹង": {
+    "query": "ចេះដឹង",
+    "count": 5,
+    "first_logged": "2026-09-14T10:53:34.453943+00:00",
+    "last_logged": "2026-09-14T10:53:34.453943+00:00",
+    "status": "pending_ai_review"
+  },
+  "ងក់ងល": {
+    "query": "ងក់ងល",
+    "count": 1,
+    "first_logged": "2026-09-14T10:39:13.566626+00:00",
+    "last_logged": "2026-09-14T10:39:13.566648+00:00",
+    "status": "pending_ai_review"
+  },
+  "ងក់ងល់": {
+    "query": "ងក់ងល់",
+    "count": 1,
+    "first_logged": "2026-09-14T10:39:18.283520+00:00",
+    "last_logged": "2026-09-14T10:39:18.283540+00:00",
+    "status": "pending_ai_review"
+  },
+  "ចែសដឹង": {
+    "query": "ចែសដឹង",
+    "count": 1,
+    "first_logged": "2026-09-14T10:54:24.158400+00:00",
+    "last_logged": "2026-09-14T10:54:24.158442+00:00",
+    "status": "pending_ai_review"
+  },
+  "ចែសៗ": {
+    "query": "ចែសៗ",
+    "count": 1,
+    "first_logged": "2026-09-14T10:56:20.202281+00:00",
+    "last_logged": "2026-09-14T10:56:20.202301+00:00",
+    "status": "pending_ai_review"
+  },
+  "ង៉ុក": {
+    "query": "ង៉ុក",
+    "count": 1,
+    "first_logged": "2026-09-14T11:06:51.296761+00:00",
+    "last_logged": "2026-09-14T11:06:51.296782+00:00",
+    "status": "pending_ai_review"
+  },
+  "ង៉ុកៗ": {
+    "query": "ង៉ុកៗ",
+    "count": 1,
+    "first_logged": "2026-09-14T11:07:15.713044+00:00",
+    "last_logged": "2026-09-14T11:07:15.713066+00:00",
+    "status": "pending_ai_review"
+  },
+  "ងើរ": {
+    "query": "ងើរ",
+    "count": 1,
+    "first_logged": "2026-09-14T11:07:54.098824+00:00",
+    "last_logged": "2026-09-14T11:07:54.098838+00:00",
+    "status": "pending_ai_review"
+  },
+  "ងើៗ": {
+    "query": "ងើៗ",
+    "count": 1,
+    "first_logged": "2026-09-14T11:07:59.169736+00:00",
+    "last_logged": "2026-09-14T11:07:59.169757+00:00",
+    "status": "pending_ai_review"
+  },
+  "តេងតាង": {
+    "query": "តេងតាងៗ",
+    "normalized_root": "តេងតាង",
+    "detected_register": "expressive_onomatopoeia",
+    "count": 3,
+    "first_logged": "2026-09-15T01:38:29.429732+00:00",
+    "last_logged": "2026-09-15T01:54:39.350343+00:00",
+    "status": "pending_ai_review"
+  },
+  "តេងតាងៗ": {
+    "query": "តេងតាងៗ",
+    "count": 3,
+    "first_logged": "2026-09-15T01:38:29.435540+00:00",
+    "last_logged": "2026-09-15T01:54:39.351973+00:00",
+    "status": "pending_ai_review"
+  },
+  "ពាក្យមិនស្គាល់៩៩": {
+    "query": "ពាក្យមិនស្គាល់៩៩",
+    "normalized_root": "ពាក្យមិនស្គាល់៩៩",
+    "detected_register": "expressive_onomatopoeia",
+    "count": 17,
+    "first_logged": "2026-09-15T01:49:15.751591+00:00",
+    "last_logged": "2026-09-29T07:13:36.174747+00:00",
+    "status": "pending_ai_review"
+  },
+  "លឺ": {
+    "query": "លឺ",
+    "normalized_root": "លឺ",
+    "detected_register": "phonetic_modern",
+    "count": 4,
+    "first_logged": "2026-09-15T04:50:39.402889+00:00",
+    "last_logged": "2026-09-15T04:51:13.416772+00:00",
+    "status": "pending_ai_review"
+  },
+  "តម្រូវ": {
+    "query": "តម្រូវ",
+    "normalized_root": "តម្រូវ",
+    "detected_register": "expressive_onomatopoeia",
+    "count": 2,
+    "first_logged": "2026-09-15T05:58:29.686668+00:00",
+    "last_logged": "2026-09-15T05:58:29.691030+00:00",
+    "status": "pending_ai_review"
+  },
+  "កេង": {
+    "query": "កេង",
+    "normalized_root": "កេង",
+    "detected_register": "colloquial_general",
+    "count": 2,
+    "first_logged": "2026-09-15T05:58:47.035984+00:00",
+    "last_logged": "2026-09-15T05:58:47.038370+00:00",
+    "status": "pending_ai_review"
+  },
+  "ហ្វ្លូ": {
+    "query": "ហ្វ្លូ",
+    "normalized_root": "ហ្វ្លូ",
+    "detected_register": "km_english_fusion",
+    "count": 7,
+    "first_logged": "2026-09-21T05:13:20.034262+00:00",
+    "last_logged": "2026-09-21T05:16:48.767828+00:00",
+    "status": "pending_ai_review"
+  },
+  "ប៉ូលី": {
+    "query": "ប៉ូលី",
+    "normalized_root": "ប៉ូលី",
+    "detected_register": "colloquial_general",
+    "count": 1,
+    "first_logged": "2026-09-21T05:32:07.725037+00:00",
+    "last_logged": "2026-09-21T05:32:07.725037+00:00",
+    "status": "pending_ai_review"
+  },
+  "ប៉ូលីស": {
+    "query": "ប៉ូលីស",
+    "normalized_root": "ប៉ូលីស",
+    "detected_register": "expressive_onomatopoeia",
+    "count": 1,
+    "first_logged": "2026-09-21T05:32:18.287320+00:00",
+    "last_logged": "2026-09-21T05:32:18.287320+00:00",
+    "status": "pending_ai_review"
+  },
+  "ប៉ូលីតិចនិច": {
+    "query": "ប៉ូលីតិចនិច",
+    "normalized_root": "ប៉ូលីតិចនិច",
+    "detected_register": "colloquial_general",
+    "count": 1,
+    "first_logged": "2026-09-21T05:32:58.837667+00:00",
+    "last_logged": "2026-09-21T05:32:58.837667+00:00",
+    "status": "pending_ai_review"
+  },
+  "តិកនិក": {
+    "query": "តិកនិក",
+    "normalized_root": "តិកនិក",
+    "detected_register": "expressive_onomatopoeia",
+    "count": 1,
+    "first_logged": "2026-09-21T05:33:52.310619+00:00",
+    "last_logged": "2026-09-21T05:33:52.310619+00:00",
+    "status": "pending_ai_review"
+  },
+  "តាក់ទិច": {
+    "query": "តាក់ទិច",
+    "normalized_root": "តាក់ទិច",
+    "detected_register": "colloquial_general",
+    "count": 1,
+    "first_logged": "2026-09-21T05:34:11.866774+00:00",
+    "last_logged": "2026-09-21T05:34:11.866774+00:00",
+    "status": "pending_ai_review"
+  },
+  "ពាក្យប្លែកៗគ្មានក្នុងវចនានុក្រម១២៣": {
+    "query": "ពាក្យប្លែកៗគ្មានក្នុងវចនានុក្រម១២៣",
+    "normalized_root": "ពាក្យប្លែកៗគ្មានក្នុងវចនានុក្រម១២៣",
+    "detected_register": "expressive_onomatopoeia",
+    "count": 8,
+    "first_logged": "2026-09-22T02:37:55.174637+00:00",
+    "last_logged": "2026-09-29T07:13:53.152833+00:00",
+    "status": "pending_ai_review"
+  }
+}

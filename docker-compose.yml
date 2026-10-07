@@ -1,0 +1,26 @@
+services:
+  typesense:
+    image: typesense/typesense:26.0
+    container_name: khmer_dict_typesense
+    ports:
+      - "8108:8108"
+    volumes:
+      - ./typesense-data:/data
+    command: '--data-dir /data --api-key=xyz_secret_key_123 --enable-cors'
+    restart: always
+
+  web:
+    build: .
+    container_name: khmer_dict_api
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+      - TYPESENSE_HOST=typesense
+      - TYPESENSE_PORT=8108
+      - TYPESENSE_API_KEY=xyz_secret_key_123
+    depends_on:
+      - typesense
+    restart: always

@@ -1,0 +1,440 @@
+// index.html
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>km_lexicon — Academic Portal</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #0f172a;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+            --badge-exact: #dcfce7;
+            --badge-exact-txt: #166534;
+            --badge-phonetic: #fef9c3;
+            --badge-phonetic-txt: #854d0e;
+            --badge-composite: #e0e7ff;
+            --badge-composite-txt: #3730a3;
+            --badge-ety: #f3e8ff;
+            --badge-ety-txt: #6b21a8;
+        }
+
+        body {
+            font-family: 'Kantumruy Pro', 'Khmer OS Battambang', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            max-width: 860px;
+            margin: 30px auto;
+            padding: 0 20px;
+            line-height: 1.6;
+        }
+
+        .header-title {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #1e293b;
+            margin-bottom: 0.2rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .header-subtitle {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
+
+        .search-container {
+            position: sticky;
+            top: 15px;
+            z-index: 10;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(8px);
+            padding: 14px;
+            border-radius: 12px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+            border: 1px solid var(--border);
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            display: flex;
+            gap: 10px;
+        }
+
+        input[type="text"] {
+            flex: 1;
+            padding: 12px 16px;
+            font-size: 1.1rem;
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        input[type="text"]:focus {
+            border-color: var(--primary);
+        }
+
+        button {
+            padding: 12px 24px;
+            font-size: 1rem;
+            font-weight: 600;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        button:hover {
+            background: var(--primary-dark);
+        }
+
+        .status-bar {
+            margin-top: 8px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 20px 24px;
+            margin-bottom: 16px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+        }
+
+        .entry-header {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            font-size: 1.6rem;
+            font-weight: bold;
+            color: #1e293b;
+            margin-bottom: 8px;
+        }
+
+        .status-badge {
+            font-size: 0.75rem;
+            padding: 3px 8px;
+            border-radius: 6px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .status-exact { background: var(--badge-exact); color: var(--badge-exact-txt); }
+        .status-phonetic { background: var(--badge-phonetic); color: var(--badge-phonetic-txt); }
+        .status-composite { background: var(--badge-composite); color: var(--badge-composite-txt); }
+
+        .ety-badge {
+            font-size: 0.8rem;
+            color: var(--badge-ety-txt);
+            background: var(--badge-ety);
+            padding: 3px 8px;
+            border-radius: 6px;
+            font-weight: 500;
+        }
+
+        .phonetics-text {
+            font-size: 1.05rem;
+            color: #475569;
+            font-weight: normal;
+        }
+
+        .def-list {
+            margin: 10px 0 0 0;
+            padding-left: 20px;
+        }
+
+        .def-item {
+            margin-bottom: 8px;
+            font-size: 1.05rem;
+            color: #334155;
+        }
+
+        .breakdown-box {
+            background: #f1f5f9;
+            border-left: 4px solid var(--primary);
+            padding: 10px 14px;
+            margin: 12px 0;
+            border-radius: 0 6px 6px 0;
+            font-size: 0.95rem;
+        }
+
+        .breakdown-tag {
+            display: inline-block;
+            background: white;
+            border: 1px solid #cbd5e1;
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin: 3px 2px;
+            cursor: pointer;
+            color: var(--primary);
+        }
+
+        .suggestions-box {
+            background: #fffbe3;
+            border: 1px solid #fef08a;
+            border-radius: 10px;
+            padding: 16px 20px;
+            margin-bottom: 16px;
+        }
+
+        .suggestions-title {
+            font-weight: bold;
+            color: #854d0e;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+
+        .suggestion-chip {
+            display: inline-block;
+            background: #fef08a;
+            color: #713f12;
+            padding: 5px 12px;
+            border-radius: 20px;
+            margin: 4px 3px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: background 0.15s;
+        }
+
+        .suggestion-chip:hover {
+            background: #fde047;
+        }
+
+        .source-tag {
+            display: block;
+            margin-top: 12px;
+            font-size: 0.8rem;
+            color: #94a3b8;
+            font-style: italic;
+        }
+
+        .combined-footer {
+            background: #f1f5f9;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 14px 18px;
+            font-size: 0.88rem;
+            color: #334155;
+            margin-top: 20px;
+            line-height: 1.7;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 30px 0;
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-title">🇰🇭 km_lexicon</div>
+    <div class="header-subtitle">Academic-Grade Khmer Computational Linguistics Engine (V2 Pipeline)</div>
+
+    <div class="search-container">
+        <div class="input-group">
+            <input type="text" id="searchInput" placeholder="ស្វែងរកពាក្យខ្មែរ (e.g., ងីងើ, ឮ, ស៊ីញ៉េ, ប្រូ)..." autocomplete="off">
+            <button onclick="triggerSearch()">ស្វែងរក</button>
+        </div>
+        <div class="status-bar">
+            <span id="statusText"></span>
+            <span id="tierBadge"></span>
+        </div>
+    </div>
+
+    <div id="resultsContainer"></div>
+
+    <script>
+        let debounceTimer;
+
+        document.getElementById('searchInput').addEventListener('input', function(e) {
+            clearTimeout(debounceTimer);
+            const query = e.target.value.trim();
+            if (!query) {
+                document.getElementById('resultsContainer').innerHTML = '';
+                document.getElementById('statusText').textContent = '';
+                document.getElementById('tierBadge').textContent = '';
+                return;
+            }
+            debounceTimer = setTimeout(() => triggerSearch(query), 250);
+        });
+
+        document.getElementById('searchInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                clearTimeout(debounceTimer);
+                triggerSearch();
+            }
+        });
+
+        async function triggerSearch(overrideQuery) {
+            const query = (overrideQuery || document.getElementById('searchInput').value).trim();
+            if (!query) return;
+
+            const container = document.getElementById('resultsContainer');
+            const statusText = document.getElementById('statusText');
+            
+            container.innerHTML = '<div class="loading">កំពុងស្វែងរកក្នុងទិន្នន័យ (Querying 4-Tier Engine)...</div>';
+            statusText.textContent = 'Searching...';
+
+            try {
+                const response = await fetch(`/api/v1/search?q=${encodeURIComponent(query)}`);
+                if (!response.ok) throw new Error(`Server status: ${response.status}`);
+                const data = await response.json();
+                renderUI(data);
+            } catch (err) {
+                container.innerHTML = `
+                    <div class="card" style="border-left: 4px solid #ef4444; color: #b91c1c;">
+                        <h3>មានបញ្ហាក្នុងការទាញយកទិន្នន័យ</h3>
+                        <p>${err.message}</p>
+                    </div>`;
+                statusText.textContent = 'Error connecting to API';
+            }
+        }
+
+        function renderUI(data) {
+            const container = document.getElementById('resultsContainer');
+            const statusText = document.getElementById('statusText');
+            const tierBadge = document.getElementById('tierBadge');
+
+            let html = '';
+            statusText.textContent = `Found ${data.total || 0} result(s) for "${data.query || ''}"`;
+            tierBadge.textContent = data.status ? `Status: ${data.status}` : '';
+
+            // 1. Render Predictive Suggestions (Tier 4 Zero-Hit or Partial Fallback)
+            if (data.predictive_suggestions && data.predictive_suggestions.length > 0) {
+                html += `
+                    <div class="suggestions-box">
+                        <div class="suggestions-title">💡 តើអ្នកមានបំណងចង់ស្វែងរកពាក្យទាំងនេះមែនទេ? (Spelling / Neighbor Suggestions):</div>
+                        <div>
+                            ${data.predictive_suggestions.map(s => `
+                                <span class="suggestion-chip" onclick="applySuggestion('${s}')">${s}</span>
+                            `).join('')}
+                        </div>
+                    </div>
+                `;
+            }
+
+            // 2. Render Component Decomposition (Composite Engine)
+            if (data.composite_breakdown && data.composite_breakdown.length > 0) {
+                html += `
+                    <div class="breakdown-box">
+                        <strong>🧩 ការបំបែកសមាសភាគពាក្យ (Composite Decomposition):</strong> 
+                        ${data.composite_breakdown.map(part => `
+                            <span class="breakdown-tag" onclick="applySuggestion('${part}')">${part}</span>
+                        `).join(' + ')}
+                    </div>
+                `;
+            }
+
+            // 3. Render Direct Definition Cards
+            if (data.results && data.results.length > 0) {
+                html += '<h4 style="margin: 15px 0 10px 0; color: #1e293b;">📖 និយមន័យផ្ទាល់ (Direct Definitions):</h4>';
+                data.results.forEach(item => {
+                    const defs = item.definitions_list || (item.definition ? [item.definition] : [item.definition_km]);
+                    let defsHtml = defs && defs.length > 1
+                        ? '<ul class="def-list">' + defs.map(d => `<li class="def-item">${escapeHtml(d)}</li>`).join('') + '</ul>'
+                        : `<p class="def-item" style="margin-top: 8px;">${escapeHtml(defs ? defs[0] : '')}</p>`;
+
+                    const ety = item.etymology || (data.linguistic_analysis?.morphology?.etymology_root);
+                    const ipa = item.ipa_km || item.ipa || `/${item.headword || item.entry_km}/`;
+                    const headword = item.headword || item.entry_km;
+
+                    let statusClass = 'status-exact';
+                    if (data.status === 'phonetic_bridge_match') statusClass = 'status-phonetic';
+                    if (data.status === 'composite_match') statusClass = 'status-composite';
+
+                    html += `
+                        <div class="card">
+                            <div class="entry-header">
+                                <span>${escapeHtml(headword)}</span>
+                                <span class="phonetics-text">IPA: ${escapeHtml(ipa)}</span>
+                                <span class="status-badge ${statusClass}">${data.status || 'match'}</span>
+                                ${ety ? `<span class="ety-badge">Ety: ${escapeHtml(ety)}</span>` : ''}
+                            </div>
+                            ${defsHtml}
+                            <span class="source-tag">ប្រភព: ${escapeHtml(item.source || "វចនានុក្រមជួន ណាត (១៩៦៧)")}</span>
+                        </div>
+                    `;
+                });
+            } else if (!data.predictive_suggestions || data.predictive_suggestions.length === 0) {
+                html += `<div class="card"><div class="def-item">រកមិនឃើញពាក្យនេះទេ (No entries found)</div></div>`;
+            }
+
+            // 4. Render Compound Entries (Sub-derivatives & Compounds in separate section)
+            if (data.compound_entries && data.compound_entries.length > 0) {
+                html += `
+                    <div style="margin-top: 24px;">
+                        <h4 style="margin-bottom: 10px; color: #334155; display: flex; align-items: center; gap: 8px;">
+                            <span>🔗 ពាក្យផ្សំ និងសមាសសព្ទពាក់ព័ន្ធ (Compound Entries):</span>
+                            <span style="font-size: 0.8rem; background: #e2e8f0; padding: 2px 8px; border-radius: 12px;">${data.compound_entries.length}</span>
+                        </h4>
+                `;
+                data.compound_entries.forEach(cItem => {
+                    const cDefs = cItem.definitions_list || [cItem.definition_km];
+                    let cDefsHtml = cDefs.length > 1
+                        ? '<ul class="def-list">' + cDefs.map(d => `<li class="def-item">${escapeHtml(d)}</li>`).join('') + '</ul>'
+                        : `<p class="def-item" style="margin-top: 6px;">${escapeHtml(cDefs[0])}</p>`;
+
+                    html += `
+                        <div class="card" style="border-left: 4px solid #6366f1; background: #faf5ff;">
+                            <div class="entry-header" style="font-size: 1.3rem;">
+                                <span>${escapeHtml(cItem.entry_km)}</span>
+                                <span class="phonetics-text" style="font-size: 0.9rem;">IPA: ${escapeHtml(cItem.ipa_km || `/${cItem.entry_km}/`)}</span>
+                                <span class="status-badge" style="background: #e0e7ff; color: #3730a3;">${escapeHtml(cItem.pos || "ពាក្យផ្សំ")}</span>
+                            </div>
+                            ${cDefsHtml}
+                            <span class="source-tag">ប្រភព: ${escapeHtml(cItem.source)}</span>
+                        </div>
+                    `;
+                });
+                html += '</div>';
+            }
+
+            // 4. Combined Metadata Footer
+            if (data.educational_card || data.linguistic_analysis) {
+                const note = data.educational_card?.historical_context_km || "អក្ខរាវិរុទ្ធផ្លូវការតាម វចនានុក្រមជួន ណាត (១៩៦៧)";
+                const root = data.linguistic_analysis?.morphology?.root_morpheme || 'N/A';
+                const alt = data.linguistic_analysis?.phonetics?.alternative_reading_km || 'គ្មាន';
+
+                html += `
+                    <div class="combined-footer">
+                        <strong>កំណត់ចំណាំអក្ខរាវិរុទ្ធ:</strong> ${escapeHtml(note)}<br>
+                        <strong>មាតាសព្ទ (Root Morpheme):</strong> ${escapeHtml(root)} | 
+                        <strong>អានផ្សេងទៀត:</strong> ${escapeHtml(alt)}
+                    </div>
+                `;
+            }
+
+            container.innerHTML = html;
+        }
+
+        function applySuggestion(word) {
+            document.getElementById('searchInput').value = word;
+            triggerSearch(word);
+        }
+
+        function escapeHtml(str) {
+            if (!str) return '';
+            return String(str).replace(/[&<>"']/g, match => ({
+                '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+            })[match]);
+        }
+    </script>
+</body>
+</html>
