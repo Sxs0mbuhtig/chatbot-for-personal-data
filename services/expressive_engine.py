@@ -19,9 +19,8 @@ from khmer_normalizer import (
 COENG = "\u17d2"  # ជើង
 
 # Strict Phonetic Alternation Sets 
-# (ចំណាំ៖ «រ» ត្រូវរក្សាទុកដាច់ដោយឡែកពី «ល» និង «ឡ» ព្រោះក្នុងអក្ខរាវិរុទ្ធខ្មែរ មិនអនុញ្ញាតឱ្យប្តូរជំនួសគ្នាដាច់ខាត)
 ALTERNATION_SETS = [
-    {"ល", "ឡ"},  # เฉพาะ ល និង ឡ ដែលអាចជួបប្រទះការសរសេរច្រឡំគ្នាក្នុងការប្រើប្រាស់ជាក់ស្តែង
+    {"ល", "ឡ"},
     {"ក", "គ"},
     {"ច", "ជ"},
     {"ត", "ទ"},
@@ -53,10 +52,7 @@ KNOWN_EXPRESSIVES = {"ឡេឡឺ", "ង៉ុក", "ង៉ុក", "ក្រ�
 # =====================================================================
 # PYDANTIC DATA BOUNDARY SCHEMAS
 # =====================================================================
-class LinguisticContext(BaseModel):
-    # Rename or alias the field to avoid shadowing BaseModel.register
-    register_type: Optional[str] = Field(default=None, alias="register")
-    
+
 class RegisterAnalysis(BaseModel):
     model_config = ConfigDict(extra="ignore", protected_namespaces=())
     primary_register: str = Field(..., description="Primary detected register category")
@@ -65,11 +61,16 @@ class RegisterAnalysis(BaseModel):
     etymology_type: str = Field(..., description="Language or structural origin")
 
 class LinguisticContext(BaseModel):
-    model_config = ConfigDict(extra="ignore", protected_namespaces=(), populate_by_name=True)
-    register: str = Field(..., description="Linguistic register category")
+    model_config = ConfigDict(extra="ignore", populate_by_name=True)
+    
+    register_type: str = Field(..., alias="register", description="Linguistic register category")
     etymology_type: str = Field(default="native_km")
     boundary_note_km: str = Field(default="")
     educational_explanation_km: str = Field(default="")
+
+    @property
+    def register(self) -> str:
+        return self.register_type
 
 class ExpressiveDigestionResult(BaseModel):
     model_config = ConfigDict(extra="ignore", protected_namespaces=())
@@ -84,18 +85,23 @@ class ExpressiveDigestionResult(BaseModel):
     is_known_term: bool = False
 
 class TypesenseDocumentSchema(BaseModel):
-    model_config = ConfigDict(extra="ignore", protected_namespaces=())
+    model_config = ConfigDict(extra="ignore", populate_by_name=True)
+    
+    register_type: str = Field(default="colloquial", alias="register")
     headword: str
     norm_headword: str
     canonical_headword: str
     pos: str = "កិ.គុ."
-    register: str = "colloquial"
     definition: str
     synonyms: List[str] = Field(default_factory=list)
     phonetic_variants: List[str] = Field(default_factory=list)
     is_official_chuon_nath: bool = False
     source_title: str = "Khmer Modern Living Lexicon"
     sort_index: int = 0
+
+    @property
+    def register(self) -> str:
+        return self.register_type
 
 # =====================================================================
 # CORE INTELLIGENT DIGESTER CLASS
@@ -293,10 +299,7 @@ def is_invalid_definition(def_text: str) -> bool:
     if not def_text:
         return True
     
-    # លុបចន្លោះទំនេរ និមិត្តសញ្ញាមើលមិនឃើញ និងសញ្ញាខណ្ឌ
     cleaned = re.sub(r"[\s\u17d4\u200b\u00a0]+", "", def_text)
-    
-    # ប្រសិនបើគ្មានអក្សរសេសសល់ ឬមានតែសញ្ញាខណ្ឌ ຖືថា Invalid
     return len(cleaned) == 0
 
 def sanitize_definition(def_text: str, fallback_text: str = "") -> str:
@@ -306,12 +309,12 @@ def sanitize_definition(def_text: str, fallback_text: str = "") -> str:
     if is_invalid_definition(def_text):
         return fallback_text
     
-    # លុបសញ្ញាខណ្ឌដែលនៅដើមអត្ថបទ (បើមាន)
     cleaned = re.sub(r"^[\s\u17d4\u200b\u00a0]+", "", def_text).strip()
     return cleaned
 
 # Global singleton instance
 expressive_engine = KhmerExpressiveEngine()
+
 def build_typesense_payload(entry_data: Dict[str, Any], engine: Optional[KhmerExpressiveEngine] = None) -> Optional[Dict[str, Any]]:
     """
     Transforms raw entries into fully bridged, searchable documents for Typesense.
@@ -321,10 +324,8 @@ def build_typesense_payload(entry_data: Dict[str, Any], engine: Optional[KhmerEx
     root = eng.strip_lek_to(entry_data.get("headword", ""))
     raw_def = entry_data.get("definition", "")
 
-    # ប្រសិនបើនិយមន័យមានតែសញ្ញាខណ្ឌ «។» ឬទទេរ ត្រូវបដិសេធ (ឬកំណត់ fallback)
     cleaned_def = sanitize_definition(raw_def)
     if not cleaned_def:
-        # បើចង់រំលង Entry ខូច៖
         return None 
 
     phonetic_variants = eng.generate_phonetic_variants(root, max_variants=10)[:10]

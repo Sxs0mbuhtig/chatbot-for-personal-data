@@ -12,3 +12,5 @@ unmatched_queries.jsonl
 batch_execution.log
 .backups/
 ANTIGRAVITY_ROUND2_DISTRIBUTED_OUTPUT.md
+missing_lexicon_audit.log
+unmatched_queries.json

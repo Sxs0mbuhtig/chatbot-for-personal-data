@@ -45,15 +45,16 @@ class HistoricalContext(BaseModel):
     model_config = ConfigDict(extra="ignore", protected_namespaces=())
     boundary_note_km: str = Field(..., description="Historical orthographic or usage boundary note in Khmer")
     educational_explanation_km: str = Field(..., description="Educational explanation in Khmer")
-
+    
 class KhmerLinguisticEntry(BaseModel):
-    model_config = ConfigDict(extra="ignore", protected_namespaces=())
+    model_config = ConfigDict(extra="ignore", populate_by_name=True)
+
     input_term: str = Field(..., description="Raw input query string")
     canonical_headword: str = Field(..., description="Canonical standard headword form")
     norm_root: str = Field(..., description="Normalized root form")
     phonetic_spelling: str = Field(..., description="Khmer phonetic pronunciation spelling")
     pos: str = Field(default="ន.", description="Part of speech tag")
-    register: str = Field(default="colloquial_general", description="Linguistic register category")
+    register_type: str = Field(default="colloquial_general", alias="register", description="Linguistic register category")
     etymology_type: str = Field(default="Colloquial Khmer", description="Etymological origin classification")
     historical_context: HistoricalContext
     definition_km: str = Field(..., description="Khmer language dictionary definition")
@@ -63,6 +64,18 @@ class KhmerLinguisticEntry(BaseModel):
     is_chuon_nath_standard: bool = Field(default=False, description="Whether entry exists in Chuon Nath dictionary")
     confidence_score: float = Field(default=0.9, ge=0.0, le=1.0, description="AI confidence score")
 
+    @property
+    def register(self) -> str:
+        return self.register_type
+
+class LinguisticContext(BaseModel):
+    model_config = ConfigDict(extra="ignore", populate_by_name=True)
+    
+    register_type: str = Field(..., alias="register", description="Linguistic register category")
+    etymology_type: str = Field(default="native_km")
+    boundary_note_km: str = Field(default="")
+    educational_explanation_km: str = Field(default="")
+    
 # =====================================================================
 # BATCH TELEMETRY EVALUATOR CLASS
 # =====================================================================
@@ -264,4 +277,4 @@ class LLMBatchCurator:
 
 # Global singletons
 batch_evaluator = BatchTelemetryEvaluator()
-llm_batch_curator = LLMBatchCurator()  # Uses GeminiKeyRotator internally
+llm_batch_curator = LLMBatchCurator()

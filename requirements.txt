@@ -15,6 +15,7 @@ google-genai>=0.1.0
 # Khmer Language Processing & Utilities
 khmer-nltk
 rapidfuzz>=3.6.0
+unicodedata2
 
 # Async I/O & HTTP Clients
 requests>=2.31.0
@@ -24,3 +25,4 @@ httpx>=0.27.0
 # Testing & Quality Assurance
 pytest>=7.4.0
 pytest-asyncio>=0.23.0
+
