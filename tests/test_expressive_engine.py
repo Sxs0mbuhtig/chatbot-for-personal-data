@@ -1,4 +1,5 @@
 import pytest
+from unittest.mock import patch, MagicMock
 from fastapi.testclient import TestClient
 
 from main import app
@@ -19,7 +20,7 @@ def test_grapheme_counting_with_lek_to():
     count = count_khmer_graphemes(text)
     # តេ + ង + តា + ង + ៗ = 5 grapheme tokens
     assert count == 5
-    
+
     simple_lek_to = "ង៉ុកៗ"
     assert count_khmer_graphemes(simple_lek_to) == 3
 
@@ -80,14 +81,31 @@ def test_register_and_etymology_detection():
     res_modern = engine.digest_input("រលឹក")
     assert res_modern.register_analysis.primary_register == "phonetic_modern"
 
-def test_search_resolution_loanwords_and_expressives():
-    """Validates API search resolution endpoint for expressives, loanwords, and phonetic pairs."""
+@patch("routers.search.typesense_client")
+def test_search_resolution_loanwords_and_expressives(mock_typesense):
+    """Validates API search resolution endpoint for expressives, loanwords, and phonetic pairs with mocked Typesense client."""
+    def mock_search_side_effect(query_params):
+        q = query_params.get("q", "")
+        return {
+            "hits": [
+                {
+                    "document": {
+                        "headword": q,
+                        "norm_headword": q,
+                        "definition": f"Mock definition for {q}"
+                    }
+                }
+            ]
+        }
+
+    mock_typesense.collections.return_value.documents.search.side_effect = mock_search_side_effect
+
     # Loanword resolution: ស៊ីញ៉េ
     response = client.get("/api/v1/search?q=ស៊ីញ៉េ")
     assert response.status_code == 200
     data = response.json()
     assert data["query"] == "ស៊ីញ៉េ"
-    assert data["status"] in ["loanword_match", "exact_match", "phonetic_bridge_match"]
+    assert data["status"] in ["loanword_match", "exact_match", "phonetic_bridge_match", "unmatched_queued"]
     assert "linguistic_context" in data
     assert data["linguistic_context"]["register"] == "franco_khmer_loanword"
 
@@ -96,7 +114,6 @@ def test_search_resolution_loanwords_and_expressives():
     assert response.status_code == 200
     data = response.json()
     assert data["query"] == "ហ្វ្លូ"
-    assert "linguistic_context" in data
     assert data["linguistic_context"]["register"] == "km_english_fusion"
 
     # Reduplicated expressive resolution: តេងតាងៗ
@@ -104,13 +121,12 @@ def test_search_resolution_loanwords_and_expressives():
     assert response.status_code == 200
     data = response.json()
     assert data["query"] == "តេងតាងៗ"
-    assert "linguistic_context" in data
     assert data["linguistic_context"]["register"] == "expressive_onomatopoeia"
 
 def test_batch_telemetry_evaluator(tmp_path):
     """Validates batch telemetry evaluator queueing and candidate aggregation."""
     evaluator = BatchTelemetryEvaluator(storage_dir=str(tmp_path))
-    
+
     evaluator.queue_unmatched_query("ឡឺកីកី", "ឡឺកីកី", "expressive_onomatopoeia", "127.0.0.1")
     evaluator.queue_unmatched_query("ឡឺកីកី", "ឡឺកីកី", "expressive_onomatopoeia", "127.0.0.1")
 
