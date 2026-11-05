@@ -1,0 +1,194 @@
+2026-10-08 13:47:59,574 [ERROR] Input JSON dump file 'path/to/your_raw_dictionary.json' not found.
+2026-10-08 13:49:21,226 [INFO] Loading raw dump from './chuon_nath_full.json'...
+2026-10-08 13:49:21,512 [INFO] Starting batch pipeline for 44698 entries across 4 workers...
+2026-10-08 13:49:23,389 [INFO]  Pipeline execution completed! Total entries processed & indexed: 0
+2026-10-08 13:56:10,473 [INFO] Loading raw dump from 'test_slice.json'...
+2026-10-08 13:56:10,473 [INFO] Starting batch pipeline for 5 entries across 4 workers...
+2026-10-08 13:56:10,475 [INFO]  Pipeline execution completed! Total entries processed & indexed: 0
+2026-10-08 15:28:11,889 [INFO] Loading raw dump from 'data/staged_definitions.json'...
+2026-10-08 15:28:11,889 [INFO] Starting batch pipeline for 4 entries across 4 workers...
+2026-10-08 15:28:11,891 [INFO]  Pipeline execution completed! Total entries processed & indexed: 0
+2026-10-08 15:28:29,184 [INFO] Loading raw dump from 'data/staged_definitions.json'...
+2026-10-08 15:28:29,184 [INFO] Starting batch pipeline for 4 entries across 4 workers...
+2026-10-08 15:28:29,186 [INFO]  Pipeline execution completed! Total entries processed & indexed: 0
+2026-10-08 15:34:22,974 [INFO] Loading raw dump from 'data/staged_definitions.json'...
+2026-10-08 15:34:22,974 [INFO] Starting batch pipeline for 4 entries across 4 workers...
+2026-10-08 15:34:23,014 [WARNING] Attempt 1/3 failed for « កនត់ត្រា »: 404 Client Error: Not Found for url: http://127.0.0.1:11435/api/generate
+2026-10-08 15:34:23,015 [WARNING] Attempt 1/3 failed for « ចំនង់ចំនូល »: 404 Client Error: Not Found for url: http://127.0.0.1:11435/api/generate
+2026-10-08 15:34:23,017 [WARNING] Attempt 1/3 failed for « កំត់ត្រា »: 404 Client Error: Not Found for url: http://127.0.0.1:11435/api/generate
+2026-10-08 15:34:23,018 [WARNING] Attempt 1/3 failed for « កម្នត់ត្រា »: 404 Client Error: Not Found for url: http://127.0.0.1:11435/api/generate
+2026-10-08 15:34:25,028 [WARNING] Attempt 2/3 failed for « កនត់ត្រា »: 404 Client Error: Not Found for url: http://127.0.0.1:11435/api/generate
+2026-10-08 15:34:25,029 [WARNING] Attempt 2/3 failed for « ចំនង់ចំនូល »: 404 Client Error: Not Found for url: http://127.0.0.1:11435/api/generate
+2026-10-08 15:34:25,033 [WARNING] Attempt 2/3 failed for « កំត់ត្រា »: 404 Client Error: Not Found for url: http://127.0.0.1:11435/api/generate
+2026-10-08 15:34:25,035 [WARNING] Attempt 2/3 failed for « កម្នត់ត្រា »: 404 Client Error: Not Found for url: http://127.0.0.1:11435/api/generate
+2026-10-08 15:34:29,039 [WARNING] Attempt 3/3 failed for « កនត់ត្រា »: 404 Client Error: Not Found for url: http://127.0.0.1:11435/api/generate
+2026-10-08 15:34:29,041 [WARNING] Attempt 3/3 failed for « ចំនង់ចំនូល »: 404 Client Error: Not Found for url: http://127.0.0.1:11435/api/generate
+2026-10-08 15:34:29,044 [WARNING] Attempt 3/3 failed for « កម្នត់ត្រា »: 404 Client Error: Not Found for url: http://127.0.0.1:11435/api/generate
+2026-10-08 15:34:29,046 [WARNING] Attempt 3/3 failed for « កំត់ត្រា »: 404 Client Error: Not Found for url: http://127.0.0.1:11435/api/generate
+2026-10-08 15:34:35,039 [ERROR]  Failed to curate « កនត់ត្រា » after 3 attempts.
+2026-10-08 15:34:35,041 [ERROR]  Failed to curate « ចំនង់ចំនូល » after 3 attempts.
+2026-10-08 15:34:35,045 [ERROR]  Failed to curate « កម្នត់ត្រា » after 3 attempts.
+2026-10-08 15:34:35,046 [ERROR]  Failed to curate « កំត់ត្រា » after 3 attempts.
+2026-10-08 15:34:35,047 [INFO]  Pipeline execution completed! Total entries processed & indexed: 0
+2026-10-08 15:35:49,449 [INFO] Loading raw dump from 'data/staged_definitions.json'...
+2026-10-08 15:35:49,450 [INFO] Starting batch pipeline for 4 entries across 4 workers...
+2026-10-08 15:35:49,464 [WARNING] Attempt 1/3 failed for « កំត់ត្រា »: 405 Client Error: Method Not Allowed for url: http://127.0.0.1:11435/
+2026-10-08 15:35:49,465 [WARNING] Attempt 1/3 failed for « ចំនង់ចំនូល »: 405 Client Error: Method Not Allowed for url: http://127.0.0.1:11435/
+2026-10-08 15:35:49,467 [WARNING] Attempt 1/3 failed for « កនត់ត្រា »: 405 Client Error: Method Not Allowed for url: http://127.0.0.1:11435/
+2026-10-08 15:35:49,470 [WARNING] Attempt 1/3 failed for « កម្នត់ត្រា »: 405 Client Error: Method Not Allowed for url: http://127.0.0.1:11435/
+2026-10-08 15:35:51,475 [WARNING] Attempt 2/3 failed for « កនត់ត្រា »: 405 Client Error: Method Not Allowed for url: http://127.0.0.1:11435/
+2026-10-08 15:35:51,476 [WARNING] Attempt 2/3 failed for « កំត់ត្រា »: 405 Client Error: Method Not Allowed for url: http://127.0.0.1:11435/
+2026-10-08 15:35:51,478 [WARNING] Attempt 2/3 failed for « ចំនង់ចំនូល »: 405 Client Error: Method Not Allowed for url: http://127.0.0.1:11435/
+2026-10-08 15:35:51,482 [WARNING] Attempt 2/3 failed for « កម្នត់ត្រា »: 405 Client Error: Method Not Allowed for url: http://127.0.0.1:11435/
+2026-10-08 15:35:55,486 [WARNING] Attempt 3/3 failed for « កនត់ត្រា »: 405 Client Error: Method Not Allowed for url: http://127.0.0.1:11435/
+2026-10-08 15:35:55,488 [WARNING] Attempt 3/3 failed for « កំត់ត្រា »: 405 Client Error: Method Not Allowed for url: http://127.0.0.1:11435/
+2026-10-08 15:35:55,489 [WARNING] Attempt 3/3 failed for « ចំនង់ចំនូល »: 405 Client Error: Method Not Allowed for url: http://127.0.0.1:11435/
+2026-10-08 15:35:55,493 [WARNING] Attempt 3/3 failed for « កម្នត់ត្រា »: 405 Client Error: Method Not Allowed for url: http://127.0.0.1:11435/
+2026-10-08 15:36:01,487 [ERROR]  Failed to curate « កនត់ត្រា » after 3 attempts.
+2026-10-08 15:36:01,488 [ERROR]  Failed to curate « កំត់ត្រា » after 3 attempts.
+2026-10-08 15:36:01,490 [ERROR]  Failed to curate « ចំនង់ចំនូល » after 3 attempts.
+2026-10-08 15:36:01,494 [ERROR]  Failed to curate « កម្នត់ត្រា » after 3 attempts.
+2026-10-08 15:36:01,494 [INFO]  Pipeline execution completed! Total entries processed & indexed: 0
+2026-10-08 15:44:05,557 [INFO] Loading raw dump from 'data/staged_definitions.json'...
+2026-10-08 15:44:05,557 [INFO] Starting batch pipeline for 4 entries across 4 workers...
+2026-10-08 15:44:05,572 [WARNING] Attempt 1/3 failed for « ចំនង់ចំនូល » via endpoint http://127.0.0.1:11435/api/generate: 404 Client Error: Not Found for url: http://127.0.0.1:11435/api/generate
+2026-10-08 15:44:05,575 [WARNING] Attempt 1/3 failed for « កម្នត់ត្រា » via endpoint http://127.0.0.1:11435/api/generate: 404 Client Error: Not Found for url: http://127.0.0.1:11435/api/generate
+2026-10-08 15:44:05,577 [WARNING] Attempt 1/3 failed for « កនត់ត្រា » via endpoint http://127.0.0.1:11435/api/generate: 404 Client Error: Not Found for url: http://127.0.0.1:11435/api/generate
+2026-10-08 15:44:05,579 [WARNING] Attempt 1/3 failed for « កំត់ត្រា » via endpoint http://127.0.0.1:11435/api/generate: 404 Client Error: Not Found for url: http://127.0.0.1:11435/api/generate
+2026-10-08 15:44:07,582 [WARNING] Attempt 2/3 failed for « ចំនង់ចំនូល » via endpoint http://127.0.0.1:11435/api/generate: 404 Client Error: Not Found for url: http://127.0.0.1:11435/api/generate
+2026-10-08 15:44:07,586 [WARNING] Attempt 2/3 failed for « កម្នត់ត្រា » via endpoint http://127.0.0.1:11435/api/generate: 404 Client Error: Not Found for url: http://127.0.0.1:11435/api/generate
+2026-10-08 15:44:07,587 [WARNING] Attempt 2/3 failed for « កនត់ត្រា » via endpoint http://127.0.0.1:11435/api/generate: 404 Client Error: Not Found for url: http://127.0.0.1:11435/api/generate
+2026-10-08 15:44:07,591 [WARNING] Attempt 2/3 failed for « កំត់ត្រា » via endpoint http://127.0.0.1:11435/api/generate: 404 Client Error: Not Found for url: http://127.0.0.1:11435/api/generate
+2026-10-08 15:44:11,591 [WARNING] Attempt 3/3 failed for « ចំនង់ចំនូល » via endpoint http://127.0.0.1:11435/api/generate: 404 Client Error: Not Found for url: http://127.0.0.1:11435/api/generate
+2026-10-08 15:44:11,596 [WARNING] Attempt 3/3 failed for « កម្នត់ត្រា » via endpoint http://127.0.0.1:11435/api/generate: 404 Client Error: Not Found for url: http://127.0.0.1:11435/api/generate
+2026-10-08 15:44:11,598 [WARNING] Attempt 3/3 failed for « កនត់ត្រា » via endpoint http://127.0.0.1:11435/api/generate: 404 Client Error: Not Found for url: http://127.0.0.1:11435/api/generate
+2026-10-08 15:44:11,601 [WARNING] Attempt 3/3 failed for « កំត់ត្រា » via endpoint http://127.0.0.1:11435/api/generate: 404 Client Error: Not Found for url: http://127.0.0.1:11435/api/generate
+2026-10-08 15:44:17,592 [ERROR] ✗ Failed to curate « ចំនង់ចំនូល » after 3 attempts.
+2026-10-08 15:44:17,597 [ERROR] ✗ Failed to curate « កម្នត់ត្រា » after 3 attempts.
+2026-10-08 15:44:17,598 [ERROR] ✗ Failed to curate « កនត់ត្រា » after 3 attempts.
+2026-10-08 15:44:17,602 [ERROR] ✗ Failed to curate « កំត់ត្រា » after 3 attempts.
+2026-10-08 15:44:17,603 [INFO] ✓ Pipeline execution completed! Total entries processed & indexed: 0
+2026-10-08 15:48:20,180 [INFO] Loading raw dump from 'data/staged_definitions.json'...
+2026-10-08 15:48:20,181 [INFO] Starting batch pipeline for 4 entries across 4 workers...
+2026-10-08 15:51:20,882 [WARNING] Attempt 1/3 failed for « កំត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-08 15:51:20,885 [WARNING] Attempt 1/3 failed for « កនត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-08 15:51:20,871 [WARNING] Attempt 1/3 failed for « ចំនង់ចំនូល » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-08 15:51:20,885 [WARNING] Attempt 1/3 failed for « កម្នត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-08 15:54:23,755 [WARNING] Attempt 2/3 failed for « ចំនង់ចំនូល » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-08 15:54:23,764 [WARNING] Attempt 2/3 failed for « កម្នត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-08 15:54:23,765 [WARNING] Attempt 2/3 failed for « កំត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-08 15:54:23,744 [WARNING] Attempt 2/3 failed for « កនត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-08 15:57:01,166 [INFO] Loading raw dump from 'data/staged_definitions.json'...
+2026-10-08 15:57:01,170 [INFO] Starting batch pipeline for 4 entries across 4 workers...
+2026-10-08 15:57:17,447 [INFO] ✓ Successfully curated headword: « ចំនង់ចំនូល »
+2026-10-08 15:57:28,052 [WARNING] Attempt 3/3 failed for « កំត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-08 15:57:28,054 [WARNING] Attempt 3/3 failed for « កម្នត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-08 15:57:28,053 [WARNING] Attempt 3/3 failed for « កនត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-08 15:57:34,057 [ERROR] ✗ Failed to curate « កំត់ត្រា » after 3 attempts.
+2026-10-08 15:57:34,058 [ERROR] ✗ Failed to curate « កម្នត់ត្រា » after 3 attempts.
+2026-10-08 15:57:34,058 [ERROR] ✗ Failed to curate « កនត់ត្រា » after 3 attempts.
+2026-10-08 15:59:47,705 [INFO] ✓ Successfully curated headword: « ចំនង់ចំនូល »
+2026-10-08 16:00:01,281 [WARNING] Attempt 1/3 failed for « កំត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-08 16:00:01,282 [WARNING] Attempt 1/3 failed for « កនត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-08 16:00:01,287 [WARNING] Attempt 1/3 failed for « កម្នត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-08 16:02:00,995 [INFO] ✓ Successfully curated headword: « កំត់ត្រា »
+2026-10-08 16:03:03,395 [WARNING] Attempt 2/3 failed for « កម្នត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-08 16:03:03,396 [WARNING] Attempt 2/3 failed for « កនត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-08 16:04:42,771 [INFO] ✓ Successfully curated headword: « កម្នត់ត្រា »
+2026-10-08 16:06:07,528 [WARNING] Attempt 3/3 failed for « កនត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-08 16:06:13,529 [ERROR] ✗ Failed to curate « កនត់ត្រា » after 3 attempts.
+2026-10-08 16:06:13,928 [INFO] HTTP Request: POST http://localhost:8108/collections/km_lexicon_entries/documents/import?action=upsert "HTTP/1.1 200 OK"
+2026-10-08 16:06:13,937 [INFO] ✓ Indexed 3 records into Typesense successfully.
+2026-10-08 16:06:13,938 [INFO] ✓ Pipeline execution completed! Total entries processed & indexed: 3
+2026-10-13 08:47:06,577 [INFO] Loading raw dump from 'data/staged_definitions.json'...
+2026-10-13 08:47:06,577 [INFO] Starting batch pipeline for 4 entries across 4 workers...
+2026-10-13 08:50:06,742 [WARNING] Attempt 1/3 failed for « កំត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-13 08:50:06,730 [WARNING] Attempt 1/3 failed for « ចំនង់ចំនូល » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-13 08:50:06,748 [WARNING] Attempt 1/3 failed for « កម្នត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-13 08:50:06,729 [WARNING] Attempt 1/3 failed for « កនត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-13 08:53:08,994 [WARNING] Attempt 2/3 failed for « កំត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-13 08:53:08,998 [WARNING] Attempt 2/3 failed for « កម្នត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-13 08:53:08,986 [WARNING] Attempt 2/3 failed for « ចំនង់ចំនូល » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-13 08:53:08,997 [WARNING] Attempt 2/3 failed for « កនត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-13 08:56:13,194 [WARNING] Attempt 3/3 failed for « កនត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-13 08:56:13,196 [WARNING] Attempt 3/3 failed for « ចំនង់ចំនូល » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-13 08:56:13,170 [WARNING] Attempt 3/3 failed for « កំត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-13 08:56:13,171 [WARNING] Attempt 3/3 failed for « កម្នត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-13 08:56:19,199 [ERROR] ✗ Failed to curate « កនត់ត្រា » after 3 attempts.
+2026-10-13 08:56:19,200 [ERROR] ✗ Failed to curate « កំត់ត្រា » after 3 attempts.
+2026-10-13 08:56:19,317 [ERROR] ✗ Failed to curate « ចំនង់ចំនូល » after 3 attempts.
+2026-10-13 08:56:19,381 [ERROR] ✗ Failed to curate « កម្នត់ត្រា » after 3 attempts.
+2026-10-13 08:56:19,384 [INFO] ✓ Pipeline execution completed! Total entries processed & indexed: 0
+2026-10-27 11:38:08,218 [INFO] Loading raw dump from 'data/staged_definitions.json'...
+2026-10-27 11:38:08,220 [INFO] Starting batch pipeline for 4 entries across 4 workers...
+2026-10-27 11:41:08,465 [WARNING] Attempt 1/3 failed for « កំត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-27 11:41:08,526 [WARNING] Attempt 1/3 failed for « ចំនង់ចំនូល » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-27 11:41:08,529 [WARNING] Attempt 1/3 failed for « កម្នត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-27 11:41:08,470 [WARNING] Attempt 1/3 failed for « កនត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-27 11:44:11,727 [WARNING] Attempt 2/3 failed for « កំត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-27 11:44:11,863 [WARNING] Attempt 2/3 failed for « ចំនង់ចំនូល » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-27 11:44:11,642 [WARNING] Attempt 2/3 failed for « កម្នត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-27 11:44:11,850 [WARNING] Attempt 2/3 failed for « កនត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-27 11:47:16,120 [WARNING] Attempt 3/3 failed for « កម្នត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-27 11:47:16,118 [WARNING] Attempt 3/3 failed for « ចំនង់ចំនូល » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-27 11:47:16,177 [WARNING] Attempt 3/3 failed for « កំត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-27 11:47:16,126 [WARNING] Attempt 3/3 failed for « កនត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-27 11:47:22,190 [ERROR] ✗ Failed to curate « កម្នត់ត្រា » after 3 attempts.
+2026-10-27 11:47:22,190 [ERROR] ✗ Failed to curate « កំត់ត្រា » after 3 attempts.
+2026-10-27 11:47:22,190 [ERROR] ✗ Failed to curate « ចំនង់ចំនូល » after 3 attempts.
+2026-10-27 11:47:22,260 [ERROR] ✗ Failed to curate « កនត់ត្រា » after 3 attempts.
+2026-10-27 11:47:23,930 [INFO] ✓ Pipeline execution completed! Total entries processed & indexed: 0
+2026-10-27 12:05:10,906 [INFO] Loading raw dump from 'data/staged_definitions.json'...
+2026-10-27 12:05:10,906 [INFO] Starting batch pipeline for 4 entries across 4 workers...
+2026-10-27 12:08:11,391 [WARNING] Attempt 1/3 failed for « កំត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-27 12:08:11,428 [WARNING] Attempt 1/3 failed for « ចំនង់ចំនូល » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-27 12:08:11,412 [WARNING] Attempt 1/3 failed for « កនត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-27 12:08:11,406 [WARNING] Attempt 1/3 failed for « កម្នត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-27 12:12:06,798 [INFO] Loading raw dump from 'data/staged_definitions.json'...
+2026-10-27 12:12:06,799 [INFO] Starting batch pipeline for 4 entries across 4 workers...
+2026-10-27 12:12:06,900 [WARNING] Attempt 1/3 failed for « ចំនង់ចំនូល » via endpoint http://127.0.0.1:11435/api/generate: 404 Client Error: Not Found for url: http://127.0.0.1:11435/api/generate
+2026-10-27 12:12:06,901 [WARNING] Attempt 1/3 failed for « កំត់ត្រា » via endpoint http://127.0.0.1:11435/api/generate: 404 Client Error: Not Found for url: http://127.0.0.1:11435/api/generate
+2026-10-27 12:12:06,902 [WARNING] Attempt 1/3 failed for « កម្នត់ត្រា » via endpoint http://127.0.0.1:11435/api/generate: 404 Client Error: Not Found for url: http://127.0.0.1:11435/api/generate
+2026-10-27 12:12:06,903 [WARNING] Attempt 1/3 failed for « កនត់ត្រា » via endpoint http://127.0.0.1:11435/api/generate: 404 Client Error: Not Found for url: http://127.0.0.1:11435/api/generate
+2026-10-27 12:12:08,915 [WARNING] Attempt 2/3 failed for « កនត់ត្រា » via endpoint http://127.0.0.1:11435/api/generate: 404 Client Error: Not Found for url: http://127.0.0.1:11435/api/generate
+2026-10-27 12:12:08,915 [WARNING] Attempt 2/3 failed for « កំត់ត្រា » via endpoint http://127.0.0.1:11435/api/generate: 404 Client Error: Not Found for url: http://127.0.0.1:11435/api/generate
+2026-10-27 12:12:08,916 [WARNING] Attempt 2/3 failed for « ចំនង់ចំនូល » via endpoint http://127.0.0.1:11435/api/generate: 404 Client Error: Not Found for url: http://127.0.0.1:11435/api/generate
+2026-10-27 12:12:08,916 [WARNING] Attempt 2/3 failed for « កម្នត់ត្រា » via endpoint http://127.0.0.1:11435/api/generate: 404 Client Error: Not Found for url: http://127.0.0.1:11435/api/generate
+2026-10-27 12:12:12,929 [WARNING] Attempt 3/3 failed for « កម្នត់ត្រា » via endpoint http://127.0.0.1:11435/api/generate: 404 Client Error: Not Found for url: http://127.0.0.1:11435/api/generate
+2026-10-27 12:12:12,930 [WARNING] Attempt 3/3 failed for « កនត់ត្រា » via endpoint http://127.0.0.1:11435/api/generate: 404 Client Error: Not Found for url: http://127.0.0.1:11435/api/generate
+2026-10-27 12:12:12,930 [WARNING] Attempt 3/3 failed for « កំត់ត្រា » via endpoint http://127.0.0.1:11435/api/generate: 404 Client Error: Not Found for url: http://127.0.0.1:11435/api/generate
+2026-10-27 12:12:12,930 [WARNING] Attempt 3/3 failed for « ចំនង់ចំនូល » via endpoint http://127.0.0.1:11435/api/generate: 404 Client Error: Not Found for url: http://127.0.0.1:11435/api/generate
+2026-10-27 12:12:18,931 [ERROR] ✗ Failed to curate « កម្នត់ត្រា » after 3 attempts.
+2026-10-27 12:12:18,931 [ERROR] ✗ Failed to curate « កនត់ត្រា » after 3 attempts.
+2026-10-27 12:12:18,931 [ERROR] ✗ Failed to curate « ចំនង់ចំនូល » after 3 attempts.
+2026-10-27 12:12:18,932 [ERROR] ✗ Failed to curate « កំត់ត្រា » after 3 attempts.
+2026-10-27 12:12:18,934 [INFO] ✓ Pipeline execution completed! Total entries processed & indexed: 0
+2026-10-27 12:13:42,091 [INFO] Loading raw dump from 'data/staged_definitions.json'...
+2026-10-27 12:13:42,091 [INFO] Starting batch pipeline for 4 entries across 4 workers...
+2026-10-27 12:16:42,259 [WARNING] Attempt 1/3 failed for « កម្នត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-27 12:16:42,261 [WARNING] Attempt 1/3 failed for « ចំនង់ចំនូល » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-27 12:16:42,253 [WARNING] Attempt 1/3 failed for « កនត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-27 12:16:42,253 [WARNING] Attempt 1/3 failed for « កំត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-27 12:19:44,432 [WARNING] Attempt 2/3 failed for « កនត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-27 12:19:44,430 [WARNING] Attempt 2/3 failed for « កម្នត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-27 12:19:44,435 [WARNING] Attempt 2/3 failed for « កំត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-27 12:19:44,436 [WARNING] Attempt 2/3 failed for « ចំនង់ចំនូល » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-27 12:22:48,780 [WARNING] Attempt 3/3 failed for « ចំនង់ចំនូល » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-27 12:22:48,788 [WARNING] Attempt 3/3 failed for « កនត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-27 12:22:48,784 [WARNING] Attempt 3/3 failed for « កម្នត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-27 12:22:48,771 [WARNING] Attempt 3/3 failed for « កំត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-27 12:23:10,613 [INFO] Loading raw dump from 'data/staged_definitions.json'...
+2026-10-27 12:23:10,613 [INFO] Starting batch pipeline for 4 entries across 4 workers...
+2026-10-27 12:25:22,425 [INFO] ✓ Successfully curated headword: « ចំនង់ចំនូល »
+2026-10-27 12:26:10,722 [WARNING] Attempt 1/3 failed for « កម្នត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-27 12:26:10,724 [WARNING] Attempt 1/3 failed for « កនត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-27 12:26:10,725 [WARNING] Attempt 1/3 failed for « កំត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-27 12:28:44,787 [INFO] ✓ Successfully curated headword: « កម្នត់ត្រា »
+2026-10-27 12:29:12,831 [WARNING] Attempt 2/3 failed for « កំត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-27 12:29:12,832 [WARNING] Attempt 2/3 failed for « កនត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-27 12:31:42,077 [INFO] ✓ Successfully curated headword: « កនត់ត្រា »
+2026-10-27 12:32:17,009 [WARNING] Attempt 3/3 failed for « កំត់ត្រា » via endpoint http://127.0.0.1:11434/api/generate: HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)
+2026-10-27 12:32:23,009 [ERROR] ✗ Failed to curate « កំត់ត្រា » after 3 attempts.
+2026-10-27 12:32:23,520 [INFO] HTTP Request: POST http://localhost:8108/collections/km_lexicon_entries/documents/import?action=upsert "HTTP/1.1 200 OK"
+2026-10-27 12:32:23,531 [INFO] ✓ Indexed 3 records into Typesense successfully.
+2026-10-27 12:32:23,532 [INFO] ✓ Pipeline execution completed! Total entries processed & indexed: 3

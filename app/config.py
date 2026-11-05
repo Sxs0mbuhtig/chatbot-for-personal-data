@@ -2,7 +2,7 @@ import os
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 class Settings(BaseSettings):
-    TYPESENSE_HOST: str = "localhost"
+    TYPESENSE_HOST: str = "typesense"   # Change from "localhost" to "typesense"
     TYPESENSE_PORT: str = "8108"
     TYPESENSE_API_KEY: str = "xyz_secret_key_123"
     TYPESENSE_COLLECTION: str = "omnisense_lexicon"
@@ -16,3 +16,5 @@ class Settings(BaseSettings):
     )
 
 settings = Settings()
+
+

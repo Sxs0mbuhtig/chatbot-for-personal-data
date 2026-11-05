@@ -1,0 +1,56 @@
+name: CI & Codecov Upload
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python 3.12
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+        cache: 'pip'
+
+    - name: Install Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install pytest pytest-cov
+
+    - name: Run Pytest with XML Coverage Report
+      run: |
+        pytest --cov=. --cov-report=xml:coverage.xml --cov-report=term-missing --cov-fail-under=75 tests/ -v
+
+    - name: Upload Coverage to Codecov
+      uses: codecov/codecov-action@v4
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }} # Required for private repos (optional for public)
+        files: ./coverage.xml
+        fail_ci_if_error: false # Set to true if you want upload failures to fail the build
+        verbose: true
+    ```
+
+### 2. Repository Secret Configuration (For Private Repositories)
+If your repository is private, you will need a repository upload token from Codecov:
+1. Log in to [Codecov](https://about.codecov.io/) with your GitHub account and add your repository.
+2. Copy the **Repository Upload Token**.
+3. In your GitHub repository, go to **Settings > Secrets and variables > Actions**.
+4. Create a new repository secret named `CODECOV_TOKEN` and paste your token.
+
+---
+
+<ElicitationsGroup message="To explore further CI/CD telemetry and optimization:">
+  <Elicitation label="Configure Coveralls integration instead of Codecov" query="How can I configure Coveralls instead of Codecov in GitHub Actions for Python pytest coverage?"/>
+  <Elicitation label="Add a live coverage badge to README.md" query="How can I add a live Codecov percentage badge to my repository README.md file?"/>
+</ElicitationsGroup>
+
+<FollowUp label="Want me to show you how to configure Coveralls integration for your Python test suite?" query="Yes, show me how to integrate Coveralls instead of Codecov in GitHub Actions."/>

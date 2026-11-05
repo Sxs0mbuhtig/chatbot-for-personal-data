@@ -1,0 +1,18 @@
+{
+  "name": "km_lexicon_entries",
+  "fields": [
+    { "name": "headword", "type": "string", "index": true, "sort": true },
+    { "name": "variants", "type": "string[]", "optional": true, "index": true },
+    { "name": "phonetic_transcription", "type": "string", "optional": true, "index": true },
+    { "name": "register", "type": "string", "facet": true, "optional": true },
+    { 
+      "name": "senses", 
+      "type": "object[]", 
+      "optional": true 
+    },
+    { "name": "etymology_root", "type": "string", "facet": true, "optional": true },
+    { "name": "embedding", "type": "float[]", "num_dim": 768, "vec_dist": "cosine" }
+  ],
+  "enable_nested_fields": true,
+  "default_sorting_field": "headword"
+}

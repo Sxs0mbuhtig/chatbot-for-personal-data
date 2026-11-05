@@ -1,0 +1,115 @@
+====================================================================
+               KHMER LEXICON STACK MANAGEMENT REPORT
+====================================================================
+Timestamp: 2026-10-13 13:16:13
+Execution Host: root@Workstation-T7810
+--------------------------------------------------------------------
+
+[SECTION 1: SYSTEM & DOCKER DAEMON STATUS]
+[2026-10-1791872173 13:16:13] [INFO] Inspecting Docker daemon and system sockets...
+[2026-10-1791872173 13:16:13] [SUCCESS] Docker daemon is active and responsive.
+
+[SECTION 2: RUNTIME SHIMS & PROCESS INTEGRITY]
+[2026-10-1791872173 13:16:13] [INFO] Scanning for locked kernel container shims...
+[2026-10-1791872174 13:16:14] [WARNING] Stuck runtime shims detected. Purging process table...
+[2026-10-1791872174 13:16:14] [SUCCESS] Process table cleared of stale shims.
+
+[SECTION 3: COMPOSE TOPOLOGY & INTER-CONNECTIVITY]
+[2026-10-1791872174 13:16:14] [INFO] Analyzing docker-compose.yml for service linkage...
+[2026-10-1791872174 13:16:14] [SUCCESS] Auto-detected primary services in topology. Target API container name mapping verified.
+ Container khmer_dict_api Stopping 
+ Container khmer_dict_api Stopped 
+ Container khmer_dict_api Removing 
+ Container khmer_dict_api Removed 
+ Container khmer_dict_typesense Stopping 
+ Container khmer_dict_typesense Stopped 
+ Container khmer_dict_typesense Removing 
+ Container khmer_dict_typesense Removed 
+ Network km_lexicon_default Removing 
+ Network km_lexicon_default Removed 
+[2026-10-1791872174 13:16:14] [SUCCESS] Previous compose instances torn down cleanly.
+[2026-10-1791872174 13:16:14] [WARNING] Stale Typesense LOCK files found. Purging to prevent segmentation faults...
+[2026-10-1791872174 13:16:14] [SUCCESS] Typesense locks cleared.
+
+[SECTION 4: STORAGE & DATABASE INTEGRITY]
+[2026-10-1791872174 13:16:14] [INFO] Validating SQLite FTS data structure for queries (e.g. term lookups)...
+[2026-10-1791872174 13:16:14] [SUCCESS] SQLite OK: 38421 records loaded.
+
+[SECTION 5: BUILD & DEPLOYMENT EXECUTION]
+[2026-10-1791872174 13:16:14] [INFO] Rebuilding and deploying stack containers...
+ Image km_lexicon-web Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 510B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 469B done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/python:3.10-slim
+#3 DONE 2.3s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 2B done
+#4 DONE 0.0s
+
+#5 [1/6] FROM docker.io/library/python:3.10-slim@sha256:6ff506466f8b1e981719b468cc0023b8ef000b983cdec0eafe119d01f379e31d
+#5 resolve docker.io/library/python:3.10-slim@sha256:6ff506466f8b1e981719b468cc0023b8ef000b983cdec0eafe119d01f379e31d 0.1s done
+#5 DONE 0.1s
+
+#6 [internal] load build context
+#6 transferring context: 255.15MB 2.5s done
+#6 DONE 2.5s
+
+#7 [3/6] RUN apt-get update && apt-get install -y --no-install-recommends     sqlite3     build-essential     curl     && rm -rf /var/lib/apt/lists/*
+#7 CACHED
+
+#8 [4/6] COPY requirements.txt .
+#8 CACHED
+
+#9 [2/6] WORKDIR /app
+#9 CACHED
+
+#10 [5/6] RUN pip install --no-cache-dir -r requirements.txt
+#10 CACHED
+
+#11 [6/6] COPY . .
+#11 DONE 1.7s
+
+#12 exporting to image
+#12 exporting layers
+#12 exporting layers 26.1s done
+#12 exporting manifest sha256:5bc361f53ddf50d582365348332ce62967d25bcf9a0f8603260c2062b44a35e8 0.0s done
+#12 exporting config sha256:6f92e023ae069f1e02b0ef1b86b18aa7284f15520e1e395ea29750137069332d 0.0s done
+#12 exporting attestation manifest sha256:3a138748bf0b704a7860ed9bfd42abab36df727d5820c2c6faaffe567374a10e 0.0s done
+#12 exporting manifest list sha256:33362f2e36e42e3aef465aea363f4244462f67882465aac1faac8d53a47ea9b6 0.0s done
+#12 naming to docker.io/library/km_lexicon-web:latest done
+#12 unpacking to docker.io/library/km_lexicon-web:latest
+#12 unpacking to docker.io/library/km_lexicon-web:latest 3.3s done
+#12 DONE 29.5s
+
+#13 resolving provenance for metadata file
+#13 DONE 0.0s
+ Image km_lexicon-web Built 
+ Network km_lexicon_default Creating 
+ Network km_lexicon_default Creating 
+ Network km_lexicon_default Created 
+ Network km_lexicon_default Created 
+ Container khmer_dict_typesense Creating 
+ Container khmer_dict_typesense Created 
+ Container khmer_dict_api Creating 
+ Container khmer_dict_api Created 
+ Container khmer_dict_typesense Starting 
+ Container khmer_dict_typesense Started 
+ Container khmer_dict_api Starting 
+ Container khmer_dict_api Started 
+[2026-10-1791872213 13:16:53] [SUCCESS] Containers built and deployed successfully.
+
+[SECTION 6: ENDPOINT HEALTH & INTER-OPERATIONALITY]
+[2026-10-1791872213 13:16:53] [INFO] Verifying Typesense search engine node (port 8108)...
+[2026-10-1791872217 13:16:57] [SUCCESS] Typesense search node is online and healthy.
+[2026-10-1791872217 13:16:57] [INFO] Verifying FastAPI backend linkage and routing (port 8000)...
+[2026-10-1791872217 13:16:57] [SUCCESS] FastAPI backend is fully operational and linked to database/search layers.
+
+--------------------------------------------------------------------
+STATUS SUMMARY: ALL CORE COMPONENTS OPERATIONAL

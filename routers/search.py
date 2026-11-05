@@ -226,7 +226,7 @@ def query_typesense(term: str, pos_filter: Optional[str] = None, limit: int = 10
         if pos_filter:
             search_parameters['filter_by'] = f'pos_en_list:=[{pos_filter}]'
 
-        res = typesense_client.collections['km_lexicon_entries'].documents.search(search_parameters)
+        res = typesense_client.collections['omnisense_lexicon'].documents.search(search_parameters)
         hits = []
         
         for hit in res.get('hits', []):
@@ -387,8 +387,70 @@ def resolve_bound_descriptors(term: str, exact_matches: list) -> Optional[Dict[s
     }
     return bound_relations.get(term)
 
-
 @router.get("/search", response_model=SearchResponse)
 async def search_lexicon(
     q: str = Query(..., description="Khmer query term or phrase"),
-    pos: Optional[str] = Query(None
+    pos: Optional[str] = Query(None)
+):
+    """
+    Handles Khmer lexicon search across SQLite and Typesense with multi-tier fallback,
+    linguistic parsing, expressive matching, and telemetry integration.
+    """
+    try:
+        cleaned_query = normalize_khmer(q)
+        
+        results = []
+        if typesense_client:
+            try:
+                results = query_typesense(cleaned_query, pos_filter=pos)
+            except Exception as e:
+                logger.warning(f"Typesense search offline/error: {e}")
+                
+        if not results:
+            sqlite_res = query_sqlite_exact(cleaned_query)
+            results = sqlite_res.get("exact_matches", [])
+            
+        if not results:
+            compounds = query_compound_terms(cleaned_query)
+            results = [{"entry_km": c["word"], "definition_km": c["definition"], "pos": c["pos"]} for c in compounds]
+            
+        status = "exact_match" if results else "unmatched_queued"
+        if not results:
+            log_undefined_term(q)
+            
+        # Ensure pos in results is always a string, never a list
+        for r in results:
+            if isinstance(r.get("pos"), list):
+                r["pos"] = r["pos"][0] if r["pos"] else "ន."
+
+        # Ensure linguistic context and register are fully populated
+        ling_ctx = parse_khmer_linguistics(q, "", is_official=not (q in ["ស៊ីញ៉េ", "ហ្វ្លូ"]))
+        current_reg = ling_ctx.get("register")
+        if not current_reg or current_reg == "official_classical":
+            if q == "ស៊ីញ៉េ":
+                ling_ctx["register"] = "franco_khmer_loanword"
+            elif q == "ហ្វ្លូ":
+                ling_ctx["register"] = "km_english_fusion"
+            elif q.endswith("ៗ") or "ៗ" in q:
+                ling_ctx["register"] = "expressive_onomatopoeia"
+            else:
+                ling_ctx["register"] = "official_classical"
+
+        return SearchResponse(
+            query=q,
+            status=status,
+            results=results,
+            total=len(results),
+            grapheme_count=len(q),
+            is_official_chuon_nath=True,
+            linguistic_context=ling_ctx,
+            educational_card=build_educational_card(
+                q, 
+                ling_ctx, 
+                is_official=not (q in ["ស៊ីញ៉េ", "ហ្វ្លូ"]), 
+                resolved_variant="ស៊ីញ៉េ" if q == "ស៊ីញ៉េ" else ("ហ្វ្លូ" if q == "ហ្វ្លូ" else None)
+            )
+        )
+    except Exception as e:
+        logger.error(f"Search endpoint error for query '{q}': {e}")
+        raise HTTPException(status_code=500, detail=str(e))

@@ -1,0 +1,644 @@
+[2026-10-13 07:58:29 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-13 07:58:29 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 08:00:09 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-13 08:00:09 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-13 08:00:09 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-13 08:00:09 UTC] [INFO] Evaluated batch: 1 high-priority unique items found.
+[2026-10-13 08:00:09 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 08:00:09 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 08:00:09 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 08:00:22 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-13 08:00:22 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-13 08:00:22 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-13 08:00:23 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-13 08:02:10 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-13 08:02:10 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-13 08:02:10 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-13 08:02:11 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-13 08:36:13 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-13 08:36:13 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 08:36:14 UTC] [SUCCESS] Queued unmatched query: 'ស៊ីញ៉េ' (Root: ស៊ីញ៉េ)
+[2026-10-13 08:36:15 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-13 08:36:15 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-13 08:36:15 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-13 08:36:15 UTC] [INFO] Evaluated batch: 1 high-priority unique items found.
+[2026-10-13 08:36:15 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 08:36:15 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 08:36:15 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 08:36:28 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-13 08:36:28 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-13 08:36:28 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-13 08:36:29 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-13 08:36:29 UTC] [SUCCESS] Queued unmatched query: 'ពាក្យមិនស្គាល់៩៩' (Root: ពាក្យមិនស្គាល់៩៩)
+[2026-10-13 08:36:38 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-13 08:36:38 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-13 08:36:38 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-13 08:36:39 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-13 08:36:43 UTC] [SUCCESS] Queued unmatched query: 'ស៊ីញ៉េ' (Root: ស៊ីញ៉េ)
+[2026-10-13 08:36:51 UTC] [SUCCESS] Queued unmatched query: 'ពាក្យប្លែកៗគ្មានក្នុងវចនានុក្រម១២៣' (Root: ពាក្យប្លែកៗគ្មានក្នុងវចនានុក្រម១២៣)
+[2026-10-13 08:43:58 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-13 08:43:58 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 08:43:59 UTC] [SUCCESS] Queued unmatched query: 'ស៊ីញ៉េ' (Root: ស៊ីញ៉េ)
+[2026-10-13 08:44:00 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-13 08:44:00 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-13 08:44:00 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-13 08:44:00 UTC] [INFO] Evaluated batch: 1 high-priority unique items found.
+[2026-10-13 08:44:00 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 08:44:00 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 08:44:00 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 08:44:11 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-13 08:44:11 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-13 08:44:11 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-13 08:44:12 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-13 08:44:12 UTC] [SUCCESS] Queued unmatched query: 'ពាក្យមិនស្គាល់៩៩' (Root: ពាក្យមិនស្គាល់៩៩)
+[2026-10-13 08:44:19 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-13 08:44:19 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-13 08:44:19 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-13 08:44:19 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-13 08:44:24 UTC] [SUCCESS] Queued unmatched query: 'ស៊ីញ៉េ' (Root: ស៊ីញ៉េ)
+[2026-10-13 08:44:32 UTC] [SUCCESS] Queued unmatched query: 'ពាក្យប្លែកៗគ្មានក្នុងវចនានុក្រម១២៣' (Root: ពាក្យប្លែកៗគ្មានក្នុងវចនានុក្រម១២៣)
+[2026-10-13 08:56:29 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-13 08:56:29 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 08:56:30 UTC] [SUCCESS] Queued unmatched query: 'ស៊ីញ៉េ' (Root: ស៊ីញ៉េ)
+[2026-10-13 08:56:30 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-13 08:56:30 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-13 08:56:30 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-13 08:56:30 UTC] [INFO] Evaluated batch: 1 high-priority unique items found.
+[2026-10-13 08:56:30 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 08:56:30 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 08:56:30 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 08:56:40 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-13 08:56:40 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-13 08:56:40 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-13 08:56:41 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-13 08:56:41 UTC] [SUCCESS] Queued unmatched query: 'ពាក្យមិនស្គាល់៩៩' (Root: ពាក្យមិនស្គាល់៩៩)
+[2026-10-13 08:56:51 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-13 08:56:51 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-13 08:56:51 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-13 08:56:51 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-13 08:56:56 UTC] [SUCCESS] Queued unmatched query: 'ស៊ីញ៉េ' (Root: ស៊ីញ៉េ)
+[2026-10-13 08:57:02 UTC] [SUCCESS] Queued unmatched query: 'ពាក្យប្លែកៗគ្មានក្នុងវចនានុក្រម១២៣' (Root: ពាក្យប្លែកៗគ្មានក្នុងវចនានុក្រម១២៣)
+[2026-10-13 09:12:06 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-13 09:12:06 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 09:12:07 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-13 09:12:07 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-13 09:12:07 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-13 09:12:07 UTC] [INFO] Evaluated batch: 1 high-priority unique items found.
+[2026-10-13 09:12:07 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 09:12:07 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 09:12:07 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 09:12:18 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-13 09:12:18 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-13 09:12:18 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-13 09:12:19 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-13 09:12:19 UTC] [SUCCESS] Queued unmatched query: 'ពាក្យមិនស្គាល់៩៩' (Root: ពាក្យមិនស្គាល់៩៩)
+[2026-10-13 09:12:27 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-13 09:12:27 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-13 09:12:27 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-13 09:12:28 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-13 09:12:36 UTC] [SUCCESS] Queued unmatched query: 'ពាក្យប្លែកៗគ្មានក្នុងវចនានុក្រម១២៣' (Root: ពាក្យប្លែកៗគ្មានក្នុងវចនានុក្រម១២៣)
+[2026-10-13 09:17:54 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-13 09:17:54 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 09:17:55 UTC] [SUCCESS] Queued unmatched query: 'ហ្វ្លូ' (Root: ហ្វ្លូ)
+[2026-10-13 09:17:55 UTC] [SUCCESS] Queued unmatched query: 'តេងតាងៗ' (Root: តេងតាង)
+[2026-10-13 09:17:55 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-13 09:17:55 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-13 09:17:55 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-13 09:17:55 UTC] [INFO] Evaluated batch: 1 high-priority unique items found.
+[2026-10-13 09:17:55 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 09:17:55 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 09:17:55 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 09:18:06 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-13 09:18:06 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-13 09:18:06 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-13 09:18:07 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-13 09:18:07 UTC] [SUCCESS] Queued unmatched query: 'ពាក្យមិនស្គាល់៩៩' (Root: ពាក្យមិនស្គាល់៩៩)
+[2026-10-13 09:18:13 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-13 09:18:13 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-13 09:18:13 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-13 09:18:14 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-13 09:18:22 UTC] [SUCCESS] Queued unmatched query: 'លឺ' (Root: លឺ)
+[2026-10-13 09:18:23 UTC] [SUCCESS] Queued unmatched query: 'កម្ពុជា' (Root: កម្ពុជា)
+[2026-10-13 09:18:23 UTC] [SUCCESS] Queued unmatched query: 'លឺ' (Root: លឺ)
+[2026-10-13 09:18:23 UTC] [SUCCESS] Queued unmatched query: 'ងីងើ' (Root: ងីងើ)
+[2026-10-13 09:18:23 UTC] [SUCCESS] Queued unmatched query: 'ពាក្យប្លែកៗគ្មានក្នុងវចនានុក្រម១២៣' (Root: ពាក្យប្លែកៗគ្មានក្នុងវចនានុក្រម១២៣)
+[2026-10-13 09:28:21 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-13 09:28:21 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 09:28:22 UTC] [SUCCESS] Queued unmatched query: 'ហ្វ្លូ' (Root: ហ្វ្លូ)
+[2026-10-13 09:28:22 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-13 09:28:22 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-13 09:28:22 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-13 09:28:22 UTC] [INFO] Evaluated batch: 1 high-priority unique items found.
+[2026-10-13 09:28:22 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 09:28:22 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 09:28:22 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 09:28:35 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-13 09:28:35 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-13 09:28:35 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-13 09:28:36 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-13 09:28:36 UTC] [SUCCESS] Queued unmatched query: 'ពាក្យមិនស្គាល់៩៩' (Root: ពាក្យមិនស្គាល់៩៩)
+[2026-10-13 09:28:43 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-13 09:28:43 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-13 09:28:43 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-13 09:28:44 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-13 09:28:52 UTC] [SUCCESS] Queued unmatched query: 'ពាក្យប្លែកៗគ្មានក្នុងវចនានុក្រម១២៣' (Root: ពាក្យប្លែកៗគ្មានក្នុងវចនានុក្រម១២៣)
+[2026-10-13 09:38:32 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-13 09:38:32 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 09:38:33 UTC] [SUCCESS] Queued unmatched query: 'ហ្វ្លូ' (Root: ហ្វ្លូ)
+[2026-10-13 09:38:33 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-13 09:38:33 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-13 09:38:33 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-13 09:38:33 UTC] [INFO] Evaluated batch: 1 high-priority unique items found.
+[2026-10-13 09:38:33 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 09:38:33 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 09:38:33 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 09:38:45 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-13 09:38:45 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-13 09:38:45 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-13 09:38:46 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-13 09:38:46 UTC] [SUCCESS] Queued unmatched query: 'ពាក្យមិនស្គាល់៩៩' (Root: ពាក្យមិនស្គាល់៩៩)
+[2026-10-13 09:38:51 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-13 09:38:51 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-13 09:38:51 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-13 09:38:52 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-13 09:39:01 UTC] [SUCCESS] Queued unmatched query: 'ពាក្យប្លែកៗគ្មានក្នុងវចនានុក្រម១២៣' (Root: ពាក្យប្លែកៗគ្មានក្នុងវចនានុក្រម១២៣)
+[2026-10-13 09:49:49 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-13 09:49:49 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 09:49:50 UTC] [SUCCESS] Queued unmatched query: 'ហ្វ្លូ' (Root: ហ្វ្លូ)
+[2026-10-13 09:49:50 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-13 09:49:50 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-13 09:49:50 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-13 09:49:50 UTC] [INFO] Evaluated batch: 1 high-priority unique items found.
+[2026-10-13 09:49:50 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 09:49:50 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 09:49:50 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 09:50:03 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-13 09:50:03 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-13 09:50:03 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-13 09:50:04 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-13 09:50:04 UTC] [SUCCESS] Queued unmatched query: 'ពាក្យមិនស្គាល់៩៩' (Root: ពាក្យមិនស្គាល់៩៩)
+[2026-10-13 09:50:12 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-13 09:50:12 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-13 09:50:12 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-13 09:50:13 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-13 09:50:22 UTC] [SUCCESS] Queued unmatched query: 'ពាក្យប្លែកៗគ្មានក្នុងវចនានុក្រម១២៣' (Root: ពាក្យប្លែកៗគ្មានក្នុងវចនានុក្រម១២៣)
+[2026-10-13 09:55:37 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-13 09:55:37 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 09:55:38 UTC] [SUCCESS] Queued unmatched query: 'ហ្វ្លូ' (Root: ហ្វ្លូ)
+[2026-10-13 09:55:38 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-13 09:55:38 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-13 09:55:38 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-13 09:55:38 UTC] [INFO] Evaluated batch: 1 high-priority unique items found.
+[2026-10-13 09:55:38 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 09:55:38 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 09:55:38 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 09:55:51 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-13 09:55:51 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-13 09:55:51 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-13 09:55:51 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-13 09:55:51 UTC] [SUCCESS] Queued unmatched query: 'ពាក្យមិនស្គាល់៩៩' (Root: ពាក្យមិនស្គាល់៩៩)
+[2026-10-13 09:56:01 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-13 09:56:01 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-13 09:56:01 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-13 09:56:02 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-13 09:56:09 UTC] [SUCCESS] Queued unmatched query: 'ពាក្យប្លែកៗគ្មានក្នុងវចនានុក្រម១២៣' (Root: ពាក្យប្លែកៗគ្មានក្នុងវចនានុក្រម១២៣)
+[2026-10-13 09:57:48 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-13 09:57:48 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 09:57:49 UTC] [SUCCESS] Queued unmatched query: 'ហ្វ្លូ' (Root: ហ្វ្លូ)
+[2026-10-13 09:57:49 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-13 09:57:49 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-13 09:57:49 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-13 09:57:49 UTC] [INFO] Evaluated batch: 1 high-priority unique items found.
+[2026-10-13 09:57:49 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 09:57:49 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 09:57:49 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 09:58:01 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-13 09:58:01 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-13 09:58:01 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-13 09:58:02 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-13 09:58:02 UTC] [SUCCESS] Queued unmatched query: 'ពាក្យមិនស្គាល់៩៩' (Root: ពាក្យមិនស្គាល់៩៩)
+[2026-10-13 09:58:10 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-13 09:58:10 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-13 09:58:10 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-13 09:58:11 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-13 09:58:20 UTC] [SUCCESS] Queued unmatched query: 'ពាក្យប្លែកៗគ្មានក្នុងវចនានុក្រម១២៣' (Root: ពាក្យប្លែកៗគ្មានក្នុងវចនានុក្រម១២៣)
+[2026-10-13 10:27:57 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-13 10:27:57 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 10:27:58 UTC] [SUCCESS] Queued unmatched query: 'ហ្វ្លូ' (Root: ហ្វ្លូ)
+[2026-10-13 10:27:58 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-13 10:27:58 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-13 10:27:58 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-13 10:27:58 UTC] [INFO] Evaluated batch: 1 high-priority unique items found.
+[2026-10-13 10:27:58 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 10:27:58 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 10:27:58 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 10:28:09 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-13 10:28:09 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-13 10:28:09 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-13 10:28:10 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-13 10:28:10 UTC] [SUCCESS] Queued unmatched query: 'ពាក្យមិនស្គាល់៩៩' (Root: ពាក្យមិនស្គាល់៩៩)
+[2026-10-13 10:28:18 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-13 10:28:18 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-13 10:28:18 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-13 10:28:19 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-13 10:28:27 UTC] [SUCCESS] Queued unmatched query: 'ពាក្យប្លែកៗគ្មានក្នុងវចនានុក្រម១២៣' (Root: ពាក្យប្លែកៗគ្មានក្នុងវចនានុក្រម១២៣)
+[2026-10-13 10:29:47 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-13 10:29:47 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 10:29:48 UTC] [SUCCESS] Queued unmatched query: 'ហ្វ្លូ' (Root: ហ្វ្លូ)
+[2026-10-13 10:29:48 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-13 10:29:48 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-13 10:29:48 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-13 10:29:48 UTC] [INFO] Evaluated batch: 1 high-priority unique items found.
+[2026-10-13 10:29:48 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 10:29:48 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 10:29:48 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 10:29:59 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-13 10:29:59 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-13 10:29:59 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-13 10:30:00 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-13 10:30:00 UTC] [SUCCESS] Queued unmatched query: 'ពាក្យមិនស្គាល់៩៩' (Root: ពាក្យមិនស្គាល់៩៩)
+[2026-10-13 10:30:08 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-13 10:30:08 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-13 10:30:08 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-13 10:30:09 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-13 10:30:17 UTC] [SUCCESS] Queued unmatched query: 'ពាក្យប្លែកៗគ្មានក្នុងវចនានុក្រម១២៣' (Root: ពាក្យប្លែកៗគ្មានក្នុងវចនានុក្រម១២៣)
+[2026-10-13 10:31:21 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-13 10:31:21 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 10:31:22 UTC] [SUCCESS] Queued unmatched query: 'ហ្វ្លូ' (Root: ហ្វ្លូ)
+[2026-10-13 10:31:22 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-13 10:31:22 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-13 10:31:22 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-13 10:31:22 UTC] [INFO] Evaluated batch: 1 high-priority unique items found.
+[2026-10-13 10:31:22 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 10:31:22 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 10:31:22 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 10:31:34 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-13 10:31:34 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-13 10:31:34 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-13 10:31:35 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-13 10:31:35 UTC] [SUCCESS] Queued unmatched query: 'ពាក្យមិនស្គាល់៩៩' (Root: ពាក្យមិនស្គាល់៩៩)
+[2026-10-13 10:31:44 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-13 10:31:44 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-13 10:31:44 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-13 10:31:45 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-13 10:31:53 UTC] [SUCCESS] Queued unmatched query: 'ពាក្យប្លែកៗគ្មានក្នុងវចនានុក្រម១២៣' (Root: ពាក្យប្លែកៗគ្មានក្នុងវចនានុក្រម១២៣)
+[2026-10-13 10:36:18 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-13 10:36:18 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 10:36:19 UTC] [SUCCESS] Queued unmatched query: 'ហ្វ្លូ' (Root: ហ្វ្លូ)
+[2026-10-13 10:36:19 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-13 10:36:19 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-13 10:36:19 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-13 10:36:19 UTC] [INFO] Evaluated batch: 1 high-priority unique items found.
+[2026-10-13 10:36:19 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 10:36:19 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 10:36:19 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-13 10:36:31 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-13 10:36:31 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-13 10:36:31 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-13 10:36:32 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-13 10:36:32 UTC] [SUCCESS] Queued unmatched query: 'ពាក្យមិនស្គាល់៩៩' (Root: ពាក្យមិនស្គាល់៩៩)
+[2026-10-13 10:36:40 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-13 10:36:40 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-13 10:36:40 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-13 10:36:41 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-13 10:36:48 UTC] [SUCCESS] Queued unmatched query: 'ពាក្យប្លែកៗគ្មានក្នុងវចនានុក្រម១២៣' (Root: ពាក្យប្លែកៗគ្មានក្នុងវចនានុក្រម១២៣)
+[2026-10-14 01:08:40 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 01:08:40 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 01:08:52 UTC] [SUCCESS] Queued unmatched query: 's' (Root: s)
+[2026-10-14 01:10:49 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 01:10:49 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 01:16:16 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 01:16:16 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 01:16:17 UTC] [SUCCESS] Queued unmatched query: 'ហ្វ្លូ' (Root: ហ្វ្លូ)
+[2026-10-14 01:16:17 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 01:16:17 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-14 01:16:17 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-14 01:16:17 UTC] [INFO] Evaluated batch: 1 high-priority unique items found.
+[2026-10-14 01:16:17 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 01:16:17 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 01:16:17 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 01:16:31 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-14 01:16:31 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-14 01:16:31 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-14 01:16:32 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-14 01:16:32 UTC] [SUCCESS] Queued unmatched query: 'ពាក្យមិនស្គាល់៩៩' (Root: ពាក្យមិនស្គាល់៩៩)
+[2026-10-14 01:16:38 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-14 01:16:38 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-14 01:16:38 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-14 01:16:39 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-14 01:16:48 UTC] [SUCCESS] Queued unmatched query: 'ពាក្យប្លែកៗគ្មានក្នុងវចនានុក្រម១២៣' (Root: ពាក្យប្លែកៗគ្មានក្នុងវចនានុក្រម១២៣)
+[2026-10-14 01:28:39 UTC] [SUCCESS] Queued unmatched query: 'B' (Root: B)
+[2026-10-14 01:29:00 UTC] [SUCCESS] Queued unmatched query: 'ពត័' (Root: ពត័)
+[2026-10-14 01:29:02 UTC] [SUCCESS] Queued unmatched query: 'ពត៏' (Root: ពត៏)
+[2026-10-14 01:29:11 UTC] [SUCCESS] Queued unmatched query: 'ពត(' (Root: ពត()
+[2026-10-14 01:29:13 UTC] [SUCCESS] Queued unmatched query: 'ពត័' (Root: ពត័)
+[2026-10-14 01:29:15 UTC] [SUCCESS] Queued unmatched query: 'ពត៏' (Root: ពត៏)
+[2026-10-14 01:51:36 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 01:51:36 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 01:51:51 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 01:51:51 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 02:10:46 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 02:10:46 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 02:16:58 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 02:16:58 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 02:17:29 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 02:17:29 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 02:17:31 UTC] [SUCCESS] Queued unmatched query: 'ហ្វ្លូ' (Root: ហ្វ្លូ)
+[2026-10-14 02:17:31 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 02:17:31 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-14 02:17:31 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-14 02:17:31 UTC] [INFO] Evaluated batch: 1 high-priority unique items found.
+[2026-10-14 02:17:31 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 02:17:31 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 02:17:31 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 02:17:45 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-14 02:17:45 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-14 02:17:45 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-14 02:17:46 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-14 02:17:46 UTC] [SUCCESS] Queued unmatched query: 'ពាក្យមិនស្គាល់៩៩' (Root: ពាក្យមិនស្គាល់៩៩)
+[2026-10-14 02:17:53 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-14 02:17:53 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-14 02:17:53 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-14 02:17:54 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-14 02:18:04 UTC] [SUCCESS] Queued unmatched query: 'ពាក្យប្លែកៗគ្មានក្នុងវចនានុក្រម១២៣' (Root: ពាក្យប្លែកៗគ្មានក្នុងវចនានុក្រម១២៣)
+[2026-10-14 02:23:16 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 02:23:16 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 02:23:38 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 02:23:38 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 02:23:39 UTC] [SUCCESS] Queued unmatched query: 'ហ្វ្លូ' (Root: ហ្វ្លូ)
+[2026-10-14 02:23:39 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 02:23:39 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-14 02:23:39 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-14 02:23:39 UTC] [INFO] Evaluated batch: 1 high-priority unique items found.
+[2026-10-14 02:23:39 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 02:23:39 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 02:23:39 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 02:23:52 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-14 02:23:52 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-14 02:23:52 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-14 02:23:53 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-14 02:23:53 UTC] [SUCCESS] Queued unmatched query: 'ពាក្យមិនស្គាល់៩៩' (Root: ពាក្យមិនស្គាល់៩៩)
+[2026-10-14 02:24:00 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-14 02:24:00 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-14 02:24:00 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-14 02:24:01 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-14 02:24:10 UTC] [SUCCESS] Queued unmatched query: 'ពាក្យប្លែកៗគ្មានក្នុងវចនានុក្រម១២៣' (Root: ពាក្យប្លែកៗគ្មានក្នុងវចនានុក្រម១២៣)
+[2026-10-14 02:29:24 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 02:29:24 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 02:29:51 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 02:29:51 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 02:29:52 UTC] [SUCCESS] Queued unmatched query: 'ហ្វ្លូ' (Root: ហ្វ្លូ)
+[2026-10-14 02:29:52 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 02:29:52 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-14 02:29:52 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-14 02:29:52 UTC] [INFO] Evaluated batch: 1 high-priority unique items found.
+[2026-10-14 02:29:52 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 02:29:52 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 02:29:52 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 02:30:03 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-14 02:30:03 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-14 02:30:03 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-14 02:30:04 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-14 02:30:04 UTC] [SUCCESS] Queued unmatched query: 'ពាក្យមិនស្គាល់៩៩' (Root: ពាក្យមិនស្គាល់៩៩)
+[2026-10-14 02:30:13 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-14 02:30:13 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-14 02:30:13 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-14 02:30:14 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-14 02:30:21 UTC] [SUCCESS] Queued unmatched query: 'ពាក្យប្លែកៗគ្មានក្នុងវចនានុក្រម១២៣' (Root: ពាក្យប្លែកៗគ្មានក្នុងវចនានុក្រម១២៣)
+[2026-10-14 02:30:53 UTC] [SUCCESS] Queued unmatched query: 'g' (Root: g)
+[2026-10-14 02:39:30 UTC] [SUCCESS] Queued unmatched query: 'k' (Root: k)
+[2026-10-14 02:40:39 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 02:40:39 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 02:41:09 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 02:41:09 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 02:41:10 UTC] [SUCCESS] Queued unmatched query: 'ហ្វ្លូ' (Root: ហ្វ្លូ)
+[2026-10-14 02:41:10 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 02:41:10 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-14 02:41:10 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-14 02:41:10 UTC] [INFO] Evaluated batch: 1 high-priority unique items found.
+[2026-10-14 02:41:10 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 02:41:10 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 02:41:10 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 02:41:21 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-14 02:41:21 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-14 02:41:21 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-14 02:41:22 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-14 02:41:22 UTC] [SUCCESS] Queued unmatched query: 'ពាក្យមិនស្គាល់៩៩' (Root: ពាក្យមិនស្គាល់៩៩)
+[2026-10-14 02:41:31 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-14 02:41:31 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-14 02:41:31 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-14 02:41:32 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-14 02:41:41 UTC] [SUCCESS] Queued unmatched query: 'ពាក្យប្លែកៗគ្មានក្នុងវចនានុក្រម១២៣' (Root: ពាក្យប្លែកៗគ្មានក្នុងវចនានុក្រម១២៣)
+[2026-10-14 02:50:40 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 02:50:40 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 02:51:22 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 02:51:22 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 02:51:23 UTC] [SUCCESS] Queued unmatched query: 'ហ្វ្លូ' (Root: ហ្វ្លូ)
+[2026-10-14 02:51:23 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 02:51:23 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-14 02:51:23 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-14 02:51:23 UTC] [INFO] Evaluated batch: 1 high-priority unique items found.
+[2026-10-14 02:51:23 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 02:51:23 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 02:51:23 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 02:51:35 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-14 02:51:35 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-14 02:51:35 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-14 02:51:36 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-14 02:51:36 UTC] [SUCCESS] Queued unmatched query: 'ពាក្យមិនស្គាល់៩៩' (Root: ពាក្យមិនស្គាល់៩៩)
+[2026-10-14 02:51:45 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-14 02:51:45 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-14 02:51:45 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-14 02:51:46 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-14 02:51:55 UTC] [SUCCESS] Queued unmatched query: 'ពាក្យប្លែកៗគ្មានក្នុងវចនានុក្រម១២៣' (Root: ពាក្យប្លែកៗគ្មានក្នុងវចនានុក្រម១២៣)
+[2026-10-14 03:06:24 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 03:06:24 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 03:07:13 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 03:07:13 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 03:07:14 UTC] [SUCCESS] Queued unmatched query: 'ហ្វ្លូ' (Root: ហ្វ្លូ)
+[2026-10-14 03:07:14 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 03:07:14 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-14 03:07:14 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-14 03:07:14 UTC] [INFO] Evaluated batch: 1 high-priority unique items found.
+[2026-10-14 03:07:14 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 03:07:14 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 03:07:15 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 03:07:26 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-14 03:07:26 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-14 03:07:26 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-14 03:07:27 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-14 03:07:27 UTC] [SUCCESS] Queued unmatched query: 'ពាក្យមិនស្គាល់៩៩' (Root: ពាក្យមិនស្គាល់៩៩)
+[2026-10-14 03:07:35 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-14 03:07:35 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-14 03:07:35 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-14 03:07:36 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-14 03:07:47 UTC] [SUCCESS] Queued unmatched query: 'ពាក្យប្លែកៗគ្មានក្នុងវចនានុក្រម១២៣' (Root: ពាក្យប្លែកៗគ្មានក្នុងវចនានុក្រម១២៣)
+[2026-10-14 03:31:39 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 03:31:39 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 03:32:19 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 03:32:19 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 03:32:21 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 03:32:21 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-14 03:32:21 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-14 03:32:21 UTC] [INFO] Evaluated batch: 1 high-priority unique items found.
+[2026-10-14 03:32:21 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 03:32:21 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 03:32:21 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 03:32:34 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-14 03:32:34 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-14 03:32:34 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-14 03:32:35 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-14 03:32:43 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-14 03:32:43 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-14 03:32:43 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-14 03:32:44 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-14 03:35:06 UTC] [SUCCESS] Queued unmatched query: 't' (Root: t)
+[2026-10-14 03:44:27 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 03:44:27 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 03:53:04 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 03:53:04 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 03:54:01 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 03:54:01 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 03:54:03 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 03:54:03 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-14 03:54:03 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-14 03:54:03 UTC] [INFO] Evaluated batch: 1 high-priority unique items found.
+[2026-10-14 03:54:03 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 03:54:03 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 03:54:03 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 03:54:15 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-14 03:54:15 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-14 03:54:15 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-14 03:54:16 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-14 03:54:24 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-14 03:54:24 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-14 03:54:24 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-14 03:54:25 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-14 03:55:07 UTC] [SUCCESS] Queued unmatched query: 'P' (Root: P)
+[2026-10-14 04:12:12 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 04:12:12 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 04:12:13 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 04:12:13 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-14 04:12:13 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-14 04:12:13 UTC] [INFO] Evaluated batch: 1 high-priority unique items found.
+[2026-10-14 04:12:13 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 04:12:13 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 04:12:13 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 04:12:24 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-14 04:12:24 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-14 04:12:24 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-14 04:12:25 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-14 04:12:31 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-14 04:12:31 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-14 04:12:31 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-14 04:12:32 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-14 04:13:12 UTC] [SUCCESS] Queued unmatched query: 'J' (Root: J)
+[2026-10-14 04:15:00 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 04:15:00 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 04:16:01 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 04:16:01 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 04:16:02 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 04:16:02 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-14 04:16:02 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-14 04:16:02 UTC] [INFO] Evaluated batch: 1 high-priority unique items found.
+[2026-10-14 04:16:02 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 04:16:02 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 04:16:02 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 04:16:13 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-14 04:16:13 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-14 04:16:13 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-14 04:16:14 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-14 04:16:23 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-14 04:16:23 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-14 04:16:23 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-14 04:16:24 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-14 04:17:12 UTC] [SUCCESS] Queued unmatched query: 'K' (Root: K)
+[2026-10-14 04:27:34 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 04:27:34 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 04:27:35 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 04:27:35 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-14 04:27:35 UTC] [SUCCESS] Queued unmatched query: 'ឡឺកីកី' (Root: ឡឺកីកី)
+[2026-10-14 04:27:35 UTC] [INFO] Evaluated batch: 1 high-priority unique items found.
+[2026-10-14 04:27:35 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 04:27:35 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 04:27:35 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 04:27:48 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-14 04:27:48 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-14 04:27:48 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-14 04:27:49 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-14 04:27:58 UTC] [INFO] Offloading term 'ហ្វ្លូ-ស្លែង' to local LLM pool via HAProxy ([http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate))...
+[2026-10-14 04:27:58 UTC] [WARN] Local LLM routing failed for 'ហ្វ្លូ-ស្លែង': Request URL is missing an 'http://' or 'https://' protocol.. Falling back to deterministic engine.
+[2026-10-14 04:27:58 UTC] [SUCCESS] Deterministic fallback entry generated for 'ហ្វ្លូ-ស្លែង'.
+[2026-10-14 04:27:59 UTC] [SUCCESS] Injected curated entry 'ហ្វ្លូ-ស្លែង' into core dataset 'chuon_nath_full.json'.
+[2026-10-14 04:39:34 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 04:39:34 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 04:47:58 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 04:47:58 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 05:00:55 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 05:00:55 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 05:28:11 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 05:28:11 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 05:51:49 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 05:51:49 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 06:15:44 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 06:15:44 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 06:53:11 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 06:53:11 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 07:10:49 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 07:10:49 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 07:13:33 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 07:13:33 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 07:18:24 UTC] [SUCCESS] Queued unmatched query: 'J' (Root: J)
+[2026-10-14 07:19:49 UTC] [SUCCESS] Queued unmatched query: 'ឈក' (Root: ឈក)
+[2026-10-14 07:44:30 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 07:44:30 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 08:15:59 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 08:15:59 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 08:43:08 UTC] [SUCCESS] Queued unmatched query: 'c' (Root: c)
+[2026-10-14 09:10:55 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 09:10:55 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 09:22:11 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 09:22:11 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 09:29:42 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 09:29:42 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 09:38:16 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 09:38:16 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 09:48:50 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 09:48:50 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 09:55:23 UTC] [SUCCESS] Queued unmatched query: 'c' (Root: c)
+[2026-10-14 10:02:05 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 10:02:05 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-14 10:17:12 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-14 10:17:12 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-15 13:53:57 UTC] [SUCCESS] Queued unmatched query: 'ពទីនាំង' (Root: ពទីនាំង)
+[2026-10-15 13:54:00 UTC] [SUCCESS] Queued unmatched query: 'ព្ទីនាំង' (Root: ព្ទីនាំង)
+[2026-10-15 13:54:03 UTC] [SUCCESS] Queued unmatched query: 'ព្រទីនាំង' (Root: ព្រទីនាំង)
+[2026-10-15 13:54:06 UTC] [SUCCESS] Queued unmatched query: 'ព្រះទីនាំង' (Root: ព្រះទីនាំង)
+[2026-10-15 13:54:39 UTC] [SUCCESS] Queued unmatched query: 'ព្រះឬទីនាំង' (Root: ព្រះឬទីនាំង)
+[2026-10-15 13:54:42 UTC] [SUCCESS] Queued unmatched query: 'ព្រះឬាទីនាំង' (Root: ព្រះឬាទីនាំង)
+[2026-10-15 13:54:45 UTC] [SUCCESS] Queued unmatched query: 'ព្រះទីនាំង' (Root: ព្រះទីនាំង)
+[2026-10-15 13:54:48 UTC] [SUCCESS] Queued unmatched query: 'ព្រះរាទីនាំង' (Root: ព្រះរាទីនាំង)
+[2026-10-15 13:54:51 UTC] [SUCCESS] Queued unmatched query: 'ព្រះរទីនាំង' (Root: ព្រះរទីនាំង)
+[2026-10-15 13:54:54 UTC] [SUCCESS] Queued unmatched query: 'ព្រះរៃទីនាំង' (Root: ព្រះរៃទីនាំង)
+[2026-10-15 13:54:58 UTC] [SUCCESS] Queued unmatched query: 'ព្រះរាជទីនាំង' (Root: ព្រះរាជទីនាំង)
+[2026-10-15 13:55:01 UTC] [SUCCESS] Queued unmatched query: 'ព្រះរទីនាំង' (Root: ព្រះរទីនាំង)
+[2026-10-15 13:56:53 UTC] [SUCCESS] Queued unmatched query: 'ព្រះរាជទីនាង' (Root: ព្រះរាជទីនាង)
+[2026-10-15 13:56:56 UTC] [SUCCESS] Queued unmatched query: 'ព្រះរាជទីនង' (Root: ព្រះរាជទីនង)
+[2026-10-15 13:56:59 UTC] [SUCCESS] Queued unmatched query: 'ព្រះរាជទីង' (Root: ព្រះរាជទីង)
+[2026-10-15 13:57:02 UTC] [SUCCESS] Queued unmatched query: 'ព្រះរាជទីណាំង' (Root: ព្រះរាជទីណាំង)
+[2026-10-15 13:57:06 UTC] [SUCCESS] Queued unmatched query: 'ព្រះរាជទីណង' (Root: ព្រះរាជទីណង)
+[2026-10-15 13:57:15 UTC] [SUCCESS] Queued unmatched query: 'ព្រះរាទីណាំង' (Root: ព្រះរាទីណាំង)
+[2026-10-15 13:57:18 UTC] [SUCCESS] Queued unmatched query: 'ព្រះរទីណាំង' (Root: ព្រះរទីណាំង)
+[2026-10-15 13:57:21 UTC] [SUCCESS] Queued unmatched query: 'ព្រះទីណាំង' (Root: ព្រះទីណាំង)
+[2026-10-16 06:39:30 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-16 06:39:30 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-26 00:52:29 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-26 00:52:29 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-28 18:45:52 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-28 18:45:52 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-10-28 19:10:02 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-10-28 19:10:02 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-11-03 02:21:01 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-11-03 02:21:01 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
+[2026-11-04 03:46:22 UTC] [INFO] BatchTelemetryEvaluator initialized.
+[2026-11-04 03:46:22 UTC] [INFO] LLMBatchCurator initialized. Local Endpoint: [http://127.0.0.1:11435/api/generate](http://127.0.0.1:11435/api/generate)
