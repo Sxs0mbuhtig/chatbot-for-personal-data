@@ -415,13 +415,15 @@ async def search_lexicon(
         if not results:
             compounds = query_compound_terms(cleaned_query)
             results = [{
-                "id": c.get("id", f"comp_{abs(hash(c['word']))}"),
+                "id": c.get("id", f"comp_{idx}_{abs(hash(c['word']))}"),
                 "entry_km": c["word"],
-                "definition_km": c["definition"],
-                "pos": c["pos"],
+                "definition_km": c.get("definition", ""),
+                "definitions_list": [c.get("definition", "")],
                 "ipa_km": f"/{c['word']}/",
-                "source": "វចនានុក្រមជួន ណាត (ចេញផ្សាយគ្រឹះសករាជ ១៩៦៧)"
-            } for c in compounds]
+                "source": "វចនានុក្រមជួន ណាត (ចេញផ្សាយគ្រឹះសករាជ ១៩៦៧)",
+                "pos": c.get("pos", "ន."),
+                "pos_full": "នាម"
+            } for idx, c in enumerate(compounds)]
             
         status = "exact_match" if results else "unmatched_queued"
         if not results:
