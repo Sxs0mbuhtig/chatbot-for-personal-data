@@ -159,7 +159,7 @@ def consolidate_headword_entries(raw_results: List[Dict[str, Any]]) -> List[Dict
         headword = r["entry_km"]
         if headword not in grouped:
             grouped[headword] = {
-                "id": r["id"],
+                "id": r.get("id", f"sqlite_{abs(hash(headword))}"),
                 "entry_km": headword,
                 "ipa_km": r["ipa_km"],
                 "source": r["source"],
@@ -240,7 +240,7 @@ def query_typesense(term: str, pos_filter: Optional[str] = None, limit: int = 10
                     pass
 
             hits.append({
-                "id": doc.get("id", f"ts_{doc.get('canonical_headword')}"),
+                "id": str(doc.get("id", f"ts_{abs(hash(doc.get('canonical_headword', term)))}")),
                 "entry_km": doc.get("canonical_headword", term),
                 "ipa_km": doc.get("phonetic_ipa", f"/{term}/"),
                 "definition_km": doc.get("all_definitions_km", ""),
@@ -285,7 +285,7 @@ def query_sqlite_exact(term: str) -> Dict[str, Any]:
         results = []
         seen_keys = set()
 
-        for r in exact_rows:
+        for idx, r in enumerate(exact_rows):
             def_text = r[2].strip() if r[2] else ""
             cleaned_def = re.sub(r"^[\s\u17d4\u200b\u00a0]+|[\s\u17d4\u200b\u00a0]+$", "", def_text)
             if not cleaned_def:
@@ -303,7 +303,7 @@ def query_sqlite_exact(term: str) -> Dict[str, Any]:
             ipa_val = headword_ling.get("phonetics", {}).get("primary_ipa", f"/{r[1]}/")
 
             results.append({
-                "id": str(r[0]),
+                "id": str(r[0]) if r[0] is not None else f"sqlite_row_{idx}",
                 "entry_km": r[1],
                 "ipa_km": ipa_val,
                 "definition_km": sanitized_def,
@@ -352,7 +352,7 @@ def query_compound_terms(prefix_term: str, limit: int = 15) -> List[Dict[str, An
 
         compounds = []
         seen_keys = set()
-        for r in rows:
+        for idx, r in enumerate(rows):
             clean_def = re.sub(r"^[\s\u17d4\u200b\u00a0]+|[\s\u17d4\u200b\u00a0]+$", "", r[2] or "")
             sanitized_def = sanitize_khmer_punctuation(clean_def)
             dedup_key = (r[1], sanitized_def)
@@ -362,6 +362,7 @@ def query_compound_terms(prefix_term: str, limit: int = 15) -> List[Dict[str, An
 
             pos_label = resolve_pos_label(r[3])
             compounds.append({
+                "id": str(r[0]) if r[0] is not None else f"sqlite_comp_{idx}",
                 "word": r[1],
                 "pos": pos_label,
                 "definition": sanitized_def
@@ -386,6 +387,7 @@ def resolve_bound_descriptors(term: str, exact_matches: list) -> Optional[Dict[s
         }
     }
     return bound_relations.get(term)
+
 
 @router.get("/search", response_model=SearchResponse)
 async def search_lexicon(
@@ -412,14 +414,23 @@ async def search_lexicon(
             
         if not results:
             compounds = query_compound_terms(cleaned_query)
-            results = [{"entry_km": c["word"], "definition_km": c["definition"], "pos": c["pos"]} for c in compounds]
+            results = [{
+                "id": c.get("id", f"comp_{abs(hash(c['word']))}"),
+                "entry_km": c["word"],
+                "definition_km": c["definition"],
+                "pos": c["pos"],
+                "ipa_km": f"/{c['word']}/",
+                "source": "វចនានុក្រមជួន ណាត (ចេញផ្សាយគ្រឹះសករាជ ១៩៦៧)"
+            } for c in compounds]
             
         status = "exact_match" if results else "unmatched_queued"
         if not results:
             log_undefined_term(q)
             
         # Ensure pos in results is always a string, never a list
-        for r in results:
+        for idx, r in enumerate(results):
+            if "id" not in r or not r["id"]:
+                r["id"] = f"res_{idx}_{abs(hash(r.get('entry_km', '')))}"
             if isinstance(r.get("pos"), list):
                 r["pos"] = r["pos"][0] if r["pos"] else "ន."
 
