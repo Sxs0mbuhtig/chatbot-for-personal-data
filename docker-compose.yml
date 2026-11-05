@@ -1,26 +1,37 @@
+# version: '3.8'
+
 services:
   typesense:
-    image: typesense/typesense:26.0
+    image: typesense/typesense:27.1
     container_name: khmer_dict_typesense
     ports:
       - "8108:8108"
+    environment:
+      - TYPESENSE_API_KEY=${TYPESENSE_API_KEY}
     volumes:
-      - ./typesense-data:/data
-    command: '--data-dir /data --api-key=xyz_secret_key_123 --enable-cors'
-    restart: always
-
+      - typesense-data:/data
+    command: "--data-dir /data --api-key=${TYPESENSE_API_KEY} --enable-cors"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python3", "-c", "import socket; s = socket.socket(); s.connect(('localhost', 8108))"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
   web:
     build: .
     container_name: khmer_dict_api
     ports:
       - "8000:8000"
-    volumes:
-      - .:/app
+    env_file:
+      - .env
     environment:
-      - PYTHONUNBUFFERED=1
+      - TYPESENSE_URL=http://typesense:8108
       - TYPESENSE_HOST=typesense
-      - TYPESENSE_PORT=8108
-      - TYPESENSE_API_KEY=xyz_secret_key_123
     depends_on:
       - typesense
-    restart: always
+    restart: unless-stopped
+    volumes:
+      - .:/app
+volumes:
+  typesense-data:

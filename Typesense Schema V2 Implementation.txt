@@ -1,0 +1,75 @@
+
+
+Typesense Schema V2 Implementation: Add structured vector embeddings, phonetic keys, etymology tags, and register flags to collection documents.
+
+Pipeline Resilience: Deploy robust host/container management (reset_and_deploy.sh) with health checks, circuit breakers, and zero-downtime container swaps.
+
+Standardized Test Suite: Expand pytest suite inside containerized app to cover edge-case Khmer Unicode combinations, zero-width space (ZWSP) handling, and high-concurrency search requests.
+
+Prerequisites & Requirements:
+
+Clean Python 3.11/3.12 Docker environment.
+
+Typesense 27.1+ instance configured with disk persistence.
+
+Integration testing scripts for host-bound port conflict resolution.
+
+Phase 2: Etymological Graph & Deep Lexicography (Months 4–6)
+
+Objective: Transform flat dictionary definitions into an interconnected semantic and historical network.
+
+Key Deliverables:
+
+Etymology Graph Engine: Build SQLite/Graph database layer linking roots (e.g., Sanskrit 'Dharma', Pali 'Dhamma') to derived Khmer words ('Thor', 'Tharm', 'Tharmak') and compound forms.
+
+Register Classification: Tag every entry with registers: Royal (រាជសព្ទ), Monk (សង្ឃសព្ទ), Formal/Administrative (ផ្លូវការ), Colloquial (ប្រចាំថ្ងៃ), and Obsolete (បុរាណ).
+
+Phonetic & Audio Layer: Implement standard IPA transcriptions and integrate synthesized phonetic pronunciation targets.
+
+Prerequisites & Requirements:
+
+Philological reference dataset curated from canonical Khmer dictionaries (e.g., Chuon Nath Lexicon) and academic publications.
+
+Graph query handler integrated into FastAPI backend (/api/v2/etymology/{word_id}).
+
+Phase 3: Living Language & Automated Ingestion Engine (Months 7–10)
+
+Objective: Enable the system to continuously learn, adapt, and ingest contemporary language from digital media.
+
+Key Deliverables:
+
+Automated Corpus Crawler & Sanitizer: Asynchronous ingestion pipeline fetching public texts from news portals, legal publications, and modern literature.
+
+Neologism Candidate Pipeline: AI model via HAProxy MCP gateway identifying unindexed words, flagging candidate definitions, and estimating usage frequencies.
+
+POS Tagging & Contextual Segmentation: Fine-tuned khmercut + CRF models for Part-of-Speech tagging and automatic context sentence extraction.
+
+Prerequisites & Requirements:
+
+Distributed queuing system (Celery or Redis streams) integrated with existing km-lexicon-batch runner.
+
+Human-in-the-loop (HITL) review dashboard for lexicographers to approve AI-proposed neologisms.
+
+Phase 4: Cross-Regional Harmonization & Public API Platform (Months 11–14)
+
+Objective: Expand vision to regional languages and launch public-facing developer/academic platforms.
+
+Key Deliverables:
+
+Regional Cognate Matrix: Establish cross-reference links between Khmer terms and corresponding Thai, Lao, and Vietnamese cognates.
+
+Public Developer & Academic Portal: OpenAPI-compliant developer API with rate-limiting, documentation, and client SDKs (Python, JavaScript).
+
+Dual-Tier Front-End Web Application: Lightweight, accessible web app offering "Simple View" for daily users and "Philologist View" for scholars.
+
+Prerequisites & Requirements:
+
+Scalable cloud or dedicated bare-metal infrastructure hosting the public-facing API.
+
+TEI-XML and JSON-LD data exporters.
+
+docker exec -it khmer_dict_api pip install pytest-cov
+docker compose exec web pytest --cov=. --cov-report=html:htmlcov tests/ -v
+
+docker compose down -v
+docker compose up -d

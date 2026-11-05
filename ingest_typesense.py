@@ -4,13 +4,24 @@ import os
 import typesense
 import unicodedata
 
+import os
+from dotenv import load_dotenv
+import typesense
+
+# Load environment variables from .env
+load_dotenv()
+
+TYPESENSE_API_KEY = os.getenv("TYPESENSE_API_KEY", "xyz_secret_key_123_secret_key_123")
+TYPESENSE_URL = os.getenv("TYPESENSE_URL", "http://localhost:8108")
+
+# Parse URL components for Typesense client config
 client = typesense.Client({
     'nodes': [{
-        'host': os.getenv('TYPESENSE_HOST', 'typesense'),
-        'port': os.getenv('TYPESENSE_PORT', '8108'),
-        'protocol': os.getenv('TYPESENSE_PROTOCOL', 'http')
+        'host': TYPESENSE_URL.replace("http://", "").replace("https://", "").split(":")[0],
+        'port': TYPESENSE_URL.split(":")[-1],
+        'protocol': 'http'
     }],
-    'api_key': os.getenv('TYPESENSE_API_KEY', 'xyz_secret_key_123'),
+    'api_key': TYPESENSE_API_KEY,
     'connection_timeout_seconds': 2
 })
 

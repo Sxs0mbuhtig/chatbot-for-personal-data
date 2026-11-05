@@ -1,0 +1,12 @@
+[tool.pytest.ini_options]
+addopts = "--cov=. --cov-report=term-missing --cov-report=xml --cov-fail-under=75"
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "session"
+
+[tool.coverage.run]
+omit = [
+    "schemas/linguistics.py",
+    "services/typesense_schema.py",
+    "services/formatting.py",
+    "services/indexer.py"
+]

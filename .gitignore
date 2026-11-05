@@ -14,3 +14,4 @@ batch_execution.log
 ANTIGRAVITY_ROUND2_DISTRIBUTED_OUTPUT.md
 missing_lexicon_audit.log
 unmatched_queries.json
+.secrets
