@@ -414,27 +414,51 @@ async def search_lexicon(
             
         if not results:
             compounds = query_compound_terms(cleaned_query)
-            results = [{
-                "id": c.get("id", f"comp_{idx}_{abs(hash(c['word']))}"),
-                "entry_km": c["word"],
-                "definition_km": c.get("definition", ""),
-                "definitions_list": [c.get("definition", "")],
-                "ipa_km": f"/{c['word']}/",
-                "source": "វចនានុក្រមជួន ណាត (ចេញផ្សាយគ្រឹះសករាជ ១៩៦៧)",
-                "pos": c.get("pos", "ន."),
-                "pos_full": "នាម"
-            } for idx, c in enumerate(compounds)]
+            results = []
+            for idx, c in enumerate(compounds):
+                comp_word = c.get("word", "")
+                comp_def = c.get("definition", "")
+                results.append({
+                    "id": str(c.get("id")) if c.get("id") else f"comp_{idx}_{abs(hash(comp_word))}",
+                    "entry_km": comp_word,
+                    "ipa_km": f"/{comp_word}/",
+                    "definition_km": comp_def,
+                    "definitions_list": [comp_def] if comp_def else [],
+                    "source": "វចនានុក្រមជួន ណាត (ចេញផ្សាយគ្រឹះសករាជ ១៩៦៧)",
+                    "pos": c.get("pos", "ន."),
+                    "pos_full": "នាម"
+                })
             
         status = "exact_match" if results else "unmatched_queued"
         if not results:
             log_undefined_term(q)
             
-        # Ensure pos in results is always a string, never a list
+        # Guarantee every item in results fulfills all Pydantic SearchResult requirements
         for idx, r in enumerate(results):
-            if "id" not in r or not r["id"]:
+            if not r.get("id"):
                 r["id"] = f"res_{idx}_{abs(hash(r.get('entry_km', '')))}"
+            else:
+                r["id"] = str(r["id"])
+                
+            if not r.get("ipa_km"):
+                r["ipa_km"] = f"/{r.get('entry_km', '')}/"
+                
+            if not r.get("definition_km"):
+                r["definition_km"] = ""
+                
+            if not r.get("definitions_list"):
+                r["definitions_list"] = [r["definition_km"]] if r["definition_km"] else []
+                
+            if not r.get("source"):
+                r["source"] = "វចនានុក្រមជួន ណាត (ចេញផ្សាយគ្រឹះសករាជ ១៩៦៧)"
+                
             if isinstance(r.get("pos"), list):
                 r["pos"] = r["pos"][0] if r["pos"] else "ន."
+            elif not r.get("pos"):
+                r["pos"] = "ន."
+                
+            if not r.get("pos_full"):
+                r["pos_full"] = "នាម"
 
         # Ensure linguistic context and register are fully populated
         ling_ctx = parse_khmer_linguistics(q, "", is_official=not (q in ["ស៊ីញ៉េ", "ហ្វ្លូ"]))
